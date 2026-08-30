@@ -149,7 +149,7 @@
                     </div>
                     <div class="floating-badge badge-3">
                         <i class="fas fa-building"></i>
-                        <span>IT Executive @ Toyota</span>
+                        <span>IT Executive @ TRM</span>
                     </div>
                 </div>
             </div>
