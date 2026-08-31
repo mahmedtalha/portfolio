@@ -1,71 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Ahmed Talha | Cybersecurity & IT Infrastructure Specialist</title>
-    <meta name="description"
-        content="Portfolio of Muhammad Ahmed Talha - Cybersecurity Specialist, IT Executive, Penetration Tester, and Security Tool Developer with 4+ years of experience.">
-    <meta name="keywords"
-        content="Muhammad Ahmed Talha, Cybersecurity, Penetration Testing, VAPT, IT Infrastructure, Red Team, Python, Network Security">
-    <meta name="author" content="Muhammad Ahmed Talha">
-
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Muhammad Ahmed Talha | Cybersecurity & IT Infrastructure Specialist">
-    <meta property="og:description"
-        content="4+ Years Experience in Penetration Testing, Red Team Ops, Network Security & IT Infrastructure Management.">
-    <meta property="og:image" content="1769531770435~2.png">
-    <meta property="og:type" content="website">
-
+    <title>Muhammad Ahmed Talha | Cybersecurity & IT Infrastructure Professional[cite: 4]</title>
+    <meta name="description" content="Muhammad Ahmed Talha is a cybersecurity and IT infrastructure professional specializing in penetration testing, VAPT, Red Team operations, network security, and systems administration.[cite: 4]">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Preloader -->
     <div id="preloader">
-        <div class="loader-container">
-            <div class="loader-hex">
-                <div class="hex-inner"></div>
-            </div>
-            <div class="loader-text">MUHAMMAD AHMED TALHA</div>
-            <div class="loader-sub"><i class="fas fa-shield-alt"></i> CYBERSECURITY & IT INFRASTRUCTURE</div>
-        </div>
+        <div class="loader-ring"></div>
+        <div class="loader-text">MAT.</div>
+        <div class="loader-sub">CYBERSECURITY • IT INFRASTRUCTURE</div>
     </div>
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-shield"><i class="fas fa-user-shield"></i></span>
-                <span class="logo-text">M. Ahmed <span class="accent">Talha</span></span>
-            </a>
+            <a href="#" class="logo">M Ahmed Talha</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
-                <a href="#speaking">Speaking</a>
                 <a href="#certifications">Certifications</a>
-                <a href="#contact">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472" target="_blank">Contact</a>
                 <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
-                <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline nav-resume" download target="_blank">
-                    <i class="fas fa-file-download"></i> Resume
-                </a>
+                <a href="assets/resume/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline" download>Resume</a>
             </div>
-            <div class="hamburger" aria-label="Toggle Navigation Menu">
+            <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -78,200 +53,116 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#speaking">Speaking & Achievements</a>
         <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-        <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-primary" download target="_blank">
-            <i class="fas fa-download"></i> Download Resume PDF
-        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472" target="_blank">Contact</a>
+        <a href="assets/resume/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-primary" download>Download Resume</a>
     </div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-glow-1"></div>
-        <div class="hero-glow-2"></div>
-
         <div class="container hero-grid">
             <div class="hero-content reveal">
                 <div class="status-badge">
-                    <span class="status-dot"></span> OPEN TO CYBERSECURITY & IT INFRASTRUCTURE OPPORTUNITIES
+                    <span class="status-dot"></span> OPEN TO CYBERSECURITY & IT OPPORTUNITIES
                 </div>
-                <h1 class="hero-title">Muhammad Ahmed <span class="gradient-text">Talha</span></h1>
-                <h2 class="hero-subtitle">
-                    <span class="typewriter"
-                        data-words='["Cybersecurity Specialist", "IT Executive", "Penetration Tester", "Red Team Specialist", "Security Automation Dev"]'>Cybersecurity
-                        Specialist</span>
-                </h2>
+                <h1 class="hero-title">Muhammad Ahmed Talha <span class="cite">[cite: 4]</span></h1>
+                <h2 class="hero-subtitle">Cybersecurity | Penetration Testing | IT Infrastructure <span class="cite">[cite: 4]</span></h2>
                 <p class="hero-bio">
-                    BS in Cybersecurity with <strong>4+ years</strong> of hands-on experience in penetration testing,
-                    Red Team operations, vulnerability assessment (VAPT), and IT infrastructure administration.
-                    Currently IT Executive at Toyota Royal Motors.
+                    With over 4+ years of experience in cybersecurity, penetration testing, and IT infrastructure management <span class="cite">[cite: 4]</span>. In my role as IT Assistant Manager at Toyota Royal Motors, I specialize in Red Team operations, VAPT, Python security tool development, and network administration <span class="cite">[cite: 4]</span>.
                 </p>
-
-                <div class="hero-meta">
-                    <div class="meta-item"><i class="fas fa-location-dot"></i> Rahim Yar Khan, Pakistan</div>
-                    <div class="meta-item"><i class="fas fa-graduation-cap"></i> BS Cyber Security (CGPA 3.5)</div>
-                </div>
-
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code-branch"></i> View Projects</a>
-                    <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-secondary" download target="_blank">
-                        <i class="fas fa-file-pdf"></i> Download Resume
-                    </a>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472" target="_blank" class="btn btn-secondary">Let's Connect</a>
                 </div>
-
                 <div class="social-links">
-                    <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/ahmedtalha470" target="_blank" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ahmedtalha470" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="mailto:ahmedtalha470@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://wa.me/923023070227" target="_blank" aria-label="WhatsApp"><i
-                            class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+923023070227" aria-label="Phone"><i class="fas fa-phone"></i></a>
                 </div>
             </div>
-
             <div class="hero-visual reveal">
-                <div class="portrait-card">
-                    <div class="portrait-ring"></div>
-                    <div class="portrait-wrapper">
-                        <img src="1769531770435~2.png" alt="Muhammad Ahmed Talha - Profile Photo" class="portrait-img">
-                        <div class="portrait-overlay"></div>
-                    </div>
-                    <div class="floating-badge badge-1">
-                        <i class="fas fa-shield-halved"></i>
-                        <span><strong>4+ Years</strong> Experience</span>
-                    </div>
-                    <div class="floating-badge badge-2">
-                        <i class="fas fa-user-secret"></i>
-                        <span>Red Team & VAPT</span>
-                    </div>
-                    <div class="floating-badge badge-3">
-                        <i class="fas fa-building"></i>
-                        <span>IT Executive @ TRM</span>
-                    </div>
+                <div class="portrait-frame">
+                    <div class="portrait-placeholder">MAT</div>
+                    <div class="floating-badge badge-1">4+ Years Experience <span class="cite">[cite: 4]</span></div>
+                    <div class="floating-badge badge-2">Red Team & VAPT <span class="cite">[cite: 4]</span></div>
+                    <div class="floating-badge badge-3">IT Assistant Manager @ Toyota <span class="cite">[cite: 4]</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Marquee Slider -->
+    <!-- Marquee -->
     <div class="marquee-wrapper">
         <div class="marquee">
-            <span><i class="fas fa-shield-virus"></i> Penetration Testing</span>
-            <span><i class="fas fa-network-wired"></i> Network Security</span>
-            <span><i class="fas fa-terminal"></i> Custom Security Scripting</span>
-            <span><i class="fas fa-user-ninja"></i> Red Team Operations</span>
-            <span><i class="fas fa-server"></i> Systems Administration</span>
-            <span><i class="fas fa-search-location"></i> OSINT Reconnaissance</span>
-            <span><i class="fab fa-python"></i> Python Automation</span>
-            <span><i class="fas fa-lock"></i> VAPT & Risk Mitigation</span>
-            <span><i class="fas fa-cloud"></i> Cloud Security & Infrastructure</span>
-            <!-- Duplicate for smooth loop -->
-            <span><i class="fas fa-shield-virus"></i> Penetration Testing</span>
-            <span><i class="fas fa-network-wired"></i> Network Security</span>
-            <span><i class="fas fa-terminal"></i> Custom Security Scripting</span>
-            <span><i class="fas fa-user-ninja"></i> Red Team Operations</span>
-            <span><i class="fas fa-server"></i> Systems Administration</span>
-            <span><i class="fas fa-search-location"></i> OSINT Reconnaissance</span>
-            <span><i class="fab fa-python"></i> Python Automation</span>
-            <span><i class="fas fa-lock"></i> VAPT & Risk Mitigation</span>
-            <span><i class="fas fa-cloud"></i> Cloud Security & Infrastructure</span>
+            <span>Cybersecurity</span><i class="fas fa-shield-alt"></i>
+            <span>Penetration Testing</span><i class="fas fa-network-wired"></i>
+            <span>VAPT</span><i class="fas fa-search"></i>
+            <span>Red Teaming</span><i class="fas fa-user-secret"></i>
+            <span>Network Security</span><i class="fas fa-server"></i>
+            <span>IT Infrastructure</span><i class="fas fa-database"></i>
+            <span>System Administration</span><i class="fab fa-python"></i>
+            <span>Python</span><i class="fas fa-terminal"></i>
+            <span>Bash</span><i class="fas fa-shield-alt"></i>
+            <!-- Duplicate for infinite loop -->
+            <span>Cybersecurity</span><i class="fas fa-shield-alt"></i>
+            <span>Penetration Testing</span><i class="fas fa-network-wired"></i>
+            <span>VAPT</span><i class="fas fa-search"></i>
+            <span>Red Teaming</span><i class="fas fa-user-secret"></i>
+            <span>Network Security</span><i class="fas fa-server"></i>
+            <span>IT Infrastructure</span><i class="fas fa-database"></i>
+            <span>System Administration</span><i class="fab fa-python"></i>
+            <span>Python</span><i class="fas fa-terminal"></i>
+            <span>Bash</span><i class="fas fa-shield-alt"></i>
         </div>
     </div>
 
-    <!-- Key Statistics -->
+    <!-- Stats Section -->
     <section id="stats" class="stats-section section-padding">
         <div class="container stats-grid">
             <div class="stat-card reveal">
-                <div class="stat-icon"><i class="fas fa-award"></i></div>
-                <h3><span class="counter" data-target="4">4</span><span class="plus">+</span></h3>
-                <p>Years Experience</p>
-                <span class="stat-sub">IT & Cybersecurity Operations</span>
+                <h3 class="counter" data-target="4">0</h3><span class="plus">+</span>
+                <p>Years Experience <span class="cite">[cite: 4]</span></p>
             </div>
             <div class="stat-card reveal" style="transition-delay: 0.1s;">
-                <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
-                <h3><span class="counter" data-target="2000">2000</span><span class="plus">+</span></h3>
-                <p>Students Trained</p>
-                <span class="stat-sub">Udemy & Virtual Labs</span>
+                <h3 class="counter" data-target="1000">0</h3><span class="plus">+</span>
+                <p>Students Trained <span class="cite">[cite: 4]</span></p>
             </div>
             <div class="stat-card reveal" style="transition-delay: 0.2s;">
-                <div class="stat-icon"><i class="fas fa-desktop"></i></div>
-                <h3><span class="counter" data-target="100">100</span><span class="plus">+</span></h3>
-                <p>Workstations Managed</p>
-                <span class="stat-sub">Toyota & CSM Systems</span>
+                <h3 class="counter" data-target="50">0</h3><span class="plus">+</span>
+                <p>Students Mentored <span class="cite">[cite: 4]</span></p>
             </div>
             <div class="stat-card reveal" style="transition-delay: 0.3s;">
-                <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3><span class="counter" data-target="10">10</span><span class="plus">+</span></h3>
-                <p>Custom Security Tools</p>
-                <span class="stat-sub">Python OSINT & VAPT Tools</span>
+                <h3 class="counter" data-target="30">0</h3><span class="plus">+</span>
+                <p>CEH Modules Developed <span class="cite">[cite: 4]</span></p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me -->
     <section id="about" class="about-section section-padding">
         <div class="container">
-            <div class="section-header center-text reveal">
-                <span class="section-tag">BACKGROUND & PROFILE</span>
-                <h2 class="section-title">Architecting & Securing Digital Infrastructure</h2>
-            </div>
-
+            <h2 class="section-title reveal">Building Secure Systems Through Technology</h2>
             <div class="about-grid">
-                <div class="about-visual reveal">
-                    <div class="about-img-frame">
-                        <img src="1787210657035.jpg" alt="Muhammad Ahmed Talha - Security Analyst & Instructor"
-                            class="about-img">
-                        <div class="about-badge">
-                            <i class="fas fa-microphone-alt"></i>
-                            <div>
-                                <strong>BZU CIT Panelist</strong>
-                                <span>Conference Speaker 2026</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="about-text reveal">
+                    <p>I am a dedicated Cybersecurity and IT Infrastructure professional with a BS in Cyber Security and extensive hands-on experience <span class="cite">[cite: 4]</span>. My expertise spans security operations, custom cybersecurity tool development using Python and Bash, and comprehensive network administration <span class="cite">[cite: 4]</span>.</p>
+                    <p>I thrive on problem-solving, continuous learning, and sharing knowledge, having mentored and trained over a thousand students in practical security methodologies <span class="cite">[cite: 4]</span>.</p>
                 </div>
-
-                <div class="about-content reveal">
-                    <h3 class="about-heading">Hi, I'm Muhammad Ahmed Talha</h3>
-                    <p class="about-description">
-                        I am a <strong>BS Cyber Security graduate</strong> and experienced IT Infrastructure
-                        professional. Over the past 4+ years, I have engineered security tools, managed enterprise IT
-                        environments, led Red Team assessments, and trained over 2,000 students in practical ethical
-                        hacking.
-                    </p>
-                    <p class="about-description">
-                        In my role as <strong>IT Executive at Toyota Royal Motors</strong>, I manage networks, SQL
-                        Windows servers, firewalls, surveillance systems, and Google Workspace for over 100 workstations
-                        and 50+ network devices—improving uptime by 10% and rapid resolution rates.
-                    </p>
-
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Specialist in Web Application Penetration Testing (WAPT) & OWASP Top 10</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Developer of custom Python/Bash OSINT, Reconnaissance & Packet Sniffing tools</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Expertise in Active Directory, Fortinet, pfSense, MikroTik & Backup Recovery</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Experienced Educator & Speaker on AI-enhanced Threats & Defense</span>
-                        </div>
+                <div class="about-cards">
+                    <div class="feature-card reveal">
+                        <i class="fas fa-user-secret card-icon"></i>
+                        <h4>Cybersecurity</h4>
+                        <p>Penetration testing, VAPT, Red Teaming, security assessment, and vulnerability analysis <span class="cite">[cite: 4]</span>.</p>
                     </div>
-
-                    <div class="about-actions">
-                        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
-                        <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline" download target="_blank">
-                            <i class="fas fa-file-alt"></i> Resume Details
-                        </a>
+                    <div class="feature-card reveal" style="transition-delay: 0.1s;">
+                        <i class="fas fa-server card-icon"></i>
+                        <h4>IT Infrastructure</h4>
+                        <p>Networks, systems administration, Windows, Active Directory, firewalls, backups, and technical support <span class="cite">[cite: 4]</span>.</p>
+                    </div>
+                    <div class="feature-card reveal" style="transition-delay: 0.2s;">
+                        <i class="fas fa-code card-icon"></i>
+                        <h4>Security Automation</h4>
+                        <p>Python, Bash, and custom security tools for reconnaissance, OSINT, metadata extraction, and analysis <span class="cite">[cite: 4]</span>.</p>
                     </div>
                 </div>
             </div>
@@ -281,246 +172,107 @@
     <!-- Skills Section -->
     <section id="skills" class="skills-section section-padding">
         <div class="container">
-            <div class="section-header center-text reveal">
-                <span class="section-tag">DOMAINS & TECHNOLOGIES</span>
-                <h2 class="section-title">Technical Expertise</h2>
-            </div>
-
+            <h2 class="section-title reveal">Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category reveal">
-                    <div class="category-header">
-                        <i class="fas fa-user-shield"></i>
-                        <h3>Cybersecurity & VAPT</h3>
-                    </div>
-                    <p class="category-desc">Comprehensive vulnerability assessment, penetration testing, and defensive
-                        strategy.</p>
+                    <h3><i class="fas fa-shield-virus"></i> Cybersecurity & VAPT <span class="cite">[cite: 4]</span></h3>
                     <div class="skill-tags">
-                        <span>Penetration Testing</span><span>Red Teaming</span><span>Vulnerability Assessment
-                            (VAPT)</span>
+                        <span>Penetration Testing</span><span>Red Teaming</span><span>Vulnerability Analysis</span>
                         <span>Digital Forensics</span><span>Incident Response</span><span>Malware Analysis</span>
-                        <span>OWASP Top 10</span><span>WAPT</span><span>OSINT</span><span>Security Auditing</span>
+                        <span>OWASP</span><span>WAPT</span>
                     </div>
                 </div>
-
-                <div class="skill-category reveal" style="transition-delay: 0.1s;">
-                    <div class="category-header">
-                        <i class="fas fa-toolbox"></i>
-                        <h3>Security Tools & SIEM</h3>
-                    </div>
-                    <p class="category-desc">Industry-standard tools for threat detection, exploitation, and telemetry.
-                    </p>
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-tools"></i> Security Tools <span class="cite">[cite: 4]</span></h3>
                     <div class="skill-tags">
                         <span>Metasploit</span><span>Nmap</span><span>Nessus</span><span>OpenVAS</span>
                         <span>Wireshark</span><span>Recon-ng</span><span>Aircrack-ng</span><span>Hashcat</span>
-                        <span>Splunk</span><span>Microsoft Sentinel</span><span>CrowdStrike
-                            Falcon</span><span>Wazuh</span><span>Ghidra</span>
+                        <span>Splunk</span><span>Microsoft Sentinel</span><span>CrowdStrike Falcon</span><span>Wazuh</span><span>Ghidra</span>
                     </div>
                 </div>
-
-                <div class="skill-category reveal" style="transition-delay: 0.2s;">
-                    <div class="category-header">
-                        <i class="fas fa-network-wired"></i>
-                        <h3>Networking & Infrastructure</h3>
-                    </div>
-                    <p class="category-desc">Enterprise network administration, active directory, firewalls, and
-                        hardware support.</p>
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-network-wired"></i> Networking & Systems <span class="cite">[cite: 4]</span></h3>
                     <div class="skill-tags">
-                        <span>TCP/IP & Subnetting</span><span>VLANs & VPNs</span><span>DHCP / DNS</span><span>Fortinet
-                            Firewall</span>
-                        <span>pfSense & MikroTik</span><span>Active Directory</span><span>Group Policy
-                            (GPO)</span><span>Windows Server</span>
-                        <span>Linux System Admin</span><span>IP CCTV & NVR</span>
+                        <span>TCP/IP</span><span>VLANs</span><span>VPNs</span><span>Firewalls</span>
+                        <span>Windows Server</span><span>Active Directory</span><span>Group Policy</span>
+                        <span>Linux</span><span>macOS</span>
                     </div>
                 </div>
-
-                <div class="skill-category reveal" style="transition-delay: 0.3s;">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Scripting & Cloud</h3>
-                    </div>
-                    <p class="category-desc">Automation, exploit writing, tool building, and cloud environments.</p>
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-laptop-code"></i> Programming & Cloud <span class="cite">[cite: 4]</span></h3>
                     <div class="skill-tags">
-                        <span>Python (Scapy/PyQt)</span><span>PowerShell</span><span>Bash Scripting</span><span>Exploit
-                            Writing</span>
-                        <span>AWS</span><span>Microsoft Azure</span><span>Google Cloud</span><span>VMware /
-                            Hyper-V</span>
-                        <span>Git & GitHub</span><span>Acronis Backup</span>
+                        <span>Python</span><span>PowerShell</span><span>Bash</span><span>Exploit Scripting</span>
+                        <span>AWS</span><span>Azure</span><span>Google Cloud</span><span>VMware</span><span>Hyper-V</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Speaking & Key Achievements -->
-    <section id="speaking" class="speaking-section section-padding">
-        <div class="container reveal">
-            <div class="speaking-card">
-                <div class="speaking-badge"><i class="fas fa-bullhorn"></i> KEYNOTE SPEAKER & PANELIST</div>
-                <h2>BZU Multan CIT Conference (Aug 2026)</h2>
-                <h4>Invited Cyber Security Panelist & Speaker | Selected by CIT Head Office Islamabad</h4>
-                <p>
-                    Delivered expert insights on <strong>AI-Enhanced Cyber Threats</strong>, <strong>Quantum Computing
-                        Risks</strong> in password & hash cracking, and strategic frameworks for building proactive
-                    human firewalls across South Punjab's digital defense infrastructure.
-                </p>
-                <div class="speaking-tags">
-                    <span><i class="fas fa-brain"></i> AI Threats</span>
-                    <span><i class="fas fa-key"></i> Quantum Cryptanalysis</span>
-                    <span><i class="fas fa-users-gear"></i> Human Firewalls</span>
-                    <span><i class="fas fa-shield-heart"></i> Digital Defense</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section -->
+    <!-- Featured Projects -->
     <section id="projects" class="projects-section section-padding">
         <div class="container">
-            <div class="section-header center-text reveal">
-                <span class="section-tag">CYBER TOOLS & HARDWARE</span>
-                <h2 class="section-title">Featured Security Projects</h2>
-            </div>
-
+            <h2 class="section-title reveal">Featured Projects</h2>
             <div class="projects-grid">
-
-                <!-- Project 1 -->
+                
                 <div class="project-card reveal">
-                    <div class="project-header">
-                        <span class="project-badge">Security Framework</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Network Reconnaissance & VAPT Framework</h3>
-                    <p>Python-based automated security assessment tool integrating Nmap, Masscan, and OpenVAS for port
-                        enumeration, service detection, vulnerability scanning, DNS reconnaissance, and HTTP header
-                        analysis.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Nmap</span><span>Masscan</span><span>OpenVAS</span><span>VAPT</span>
+                    <div class="project-content">
+                        <span class="project-category">Security Framework <span class="cite">[cite: 4]</span></span>
+                        <h3>Network Reconnaissance Framework <span class="cite">[cite: 4]</span></h3>
+                        <p>Python-based framework integrating Nmap, Masscan, and OpenVAS for discovery, vulnerability scanning, and DNS reconnaissance <span class="cite">[cite: 4]</span>.</p>
+                        <div class="tech-stack"><span>Python</span><span>Nmap</span><span>OpenVAS</span></div>
+                        <a href="https://github.com/matalha786/info-gathering" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> View Source</a>
                     </div>
                 </div>
 
-                <!-- Project 2 (FYP) -->
-                <div class="project-card fyp-highlight reveal" style="transition-delay: 0.1s;">
-                    <div class="project-header">
-                        <span class="project-badge fyp-badge"><i class="fas fa-microchip"></i> Final Year Project
-                            (FYP)</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Portable Wi-Fi Deauthentication Testing System</h3>
-                    <p>Engineered a low-cost, portable wireless penetration testing device using NodeMCU ESP8266 to scan
-                        IEEE 802.11 networks, simulate controlled client deauthentication, and audit Wi-Fi security
-                        postures.</p>
-                    <div class="tech-stack">
-                        <span>NodeMCU ESP8266</span><span>C/C++</span><span>IEEE 802.11</span><span>Wireless
-                            Security</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card reveal" style="transition-delay: 0.2s;">
-                    <div class="project-header">
-                        <span class="project-badge">OSINT & Forensics</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Zeta Metadata & OSINT Extractor</h3>
-                    <p>Python digital forensics tool to extract hidden metadata from PDF, DOCX, and image files for
-                        OSINT investigations, risk assessment, and intelligence gathering.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>OSINT</span><span>Digital Forensics</span><span>EXIF</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card reveal" style="transition-delay: 0.3s;">
-                    <div class="project-header">
-                        <span class="project-badge">OSINT Reconnaissance</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>User Finder Zeta – OSINT Scanner</h3>
-                    <p>Python reconnaissance tool designed to trace usernames and email accounts across hundreds of
-                        online platforms, generating structured investigation reports for digital research.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Multithreading</span><span>OSINT</span><span>API Scraping</span>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
                 <div class="project-card reveal">
-                    <div class="project-header">
-                        <span class="project-badge">Network Security</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Python Network Packet Sniffer</h3>
-                    <p>Built a raw packet sniffer using Python and Scapy to capture, inspect, categorize, and log
-                        network traffic protocols (TCP, UDP, ICMP) with export capabilities for analysis.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Scapy</span><span>TCP/IP</span><span>Wireshark</span>
+                    <div class="project-content">
+                        <span class="project-category">OSINT Tool <span class="cite">[cite: 4]</span></span>
+                        <h3>Zeta Metadata & OSINT Extractor <span class="cite">[cite: 4]</span></h3>
+                        <p>Python tool for metadata extraction from PDF, DOCX, and images for OSINT and digital investigation workflows <span class="cite">[cite: 4]</span>.</p>
+                        <div class="tech-stack"><span>Python</span><span>OSINT</span><span>Forensics</span></div>
+                        <a href="https://github.com/matalha786/meta-data-extractor-zeta" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> View Source</a>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-card reveal" style="transition-delay: 0.1s;">
-                    <div class="project-header">
-                        <span class="project-badge">AI & Vision Application</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>AI Video & Image Watermark Remover Pro</h3>
-                    <p>Desktop GUI application integrating Florence-2 and LaMA AI models for automated object detection,
-                        segmentation, and seamless watermark removal from images and video feeds.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Florence-2</span><span>LaMA AI</span><span>PyQt GUI</span>
+                <div class="project-card reveal">
+                    <div class="project-content">
+                        <span class="project-category">Network Analysis <span class="cite">[cite: 4]</span></span>
+                        <h3>Python Network Packet Sniffer <span class="cite">[cite: 4]</span></h3>
+                        <p>Python and Scapy-based packet capture and analysis tool to log and export network traffic <span class="cite">[cite: 4]</span>.</p>
+                        <div class="tech-stack"><span>Python</span><span>Scapy</span><span>Networking</span></div>
+                        <a href="https://github.com/matalha786/PRODIGY_CS_05_packet_sniffer" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> View Source</a>
                     </div>
                 </div>
 
-                <!-- Project 7 -->
-                <div class="project-card reveal" style="transition-delay: 0.2s;">
-                    <div class="project-header">
-                        <span class="project-badge">Reconnaissance Tool</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Live Proxy & Website Detector</h3>
-                    <p>High-performance multithreaded tools built to scan active proxy servers, verify target web
-                        service availability, inspect SSL certificates, and prepare target lists for Red Team
-                        engagements.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Sockets</span><span>Async IO</span><span>Recon</span>
+                <div class="project-card reveal">
+                    <div class="project-content">
+                        <span class="project-category">AI Utility <span class="cite">[cite: 4]</span></span>
+                        <h3>AI Watermark Remover Pro <span class="cite">[cite: 4]</span></h3>
+                        <p>Python GUI application using AI models for automated watermark detection and removal <span class="cite">[cite: 4]</span>.</p>
+                        <div class="tech-stack"><span>Python</span><span>AI</span><span>GUI</span></div>
+                        <a href="https://github.com/matalha786/AI-Video-Watermark-Remover-Pro" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> View Source</a>
                     </div>
                 </div>
-
-                <!-- Project 8 -->
-                <div class="project-card reveal" style="transition-delay: 0.3s;">
-                    <div class="project-header">
-                        <span class="project-badge">Security Scripting</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
+                
+                <div class="project-card reveal">
+                    <div class="project-content">
+                        <span class="project-category">Security Tool <span class="cite">[cite: 4]</span></span>
+                        <h3>User Finder Zeta <span class="cite">[cite: 4]</span></h3>
+                        <p>OSINT tool for discovering usernames and email accounts across online platforms and generating investigation results <span class="cite">[cite: 4]</span>.</p>
+                        <div class="tech-stack"><span>Python</span><span>OSINT</span></div>
+                        <a href="https://github.com/matalha786/user-finder" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> View Source</a>
                     </div>
-                    <h3>Crypto & Keylogging Tool Suite</h3>
-                    <p>Educational security tools developed during dev internships including image encryption scripts,
-                        payload demonstration suites, and keystroke logging monitoring tools.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Cryptography</span><span>Security Research</span>
+                </div>
+                
+                <div class="project-card reveal">
+                    <div class="project-content">
+                        <span class="project-category">Reconnaissance <span class="cite">[cite: 4]</span></span>
+                        <h3>Live Proxy & Website Detectors <span class="cite">[cite: 4]</span></h3>
+                        <p>Multithreaded Python tools for identifying active proxy servers and verifying live web targets during reconnaissance <span class="cite">[cite: 4]</span>.</p>
+                        <div class="tech-stack"><span>Python</span><span>Networking</span></div>
+                        <a href="https://github.com/matalha786/live-proxy-detector" target="_blank" class="btn btn-outline" style="margin-right: 5px;"><i class="fab fa-github"></i> Proxies</a>
+                        <a href="https://github.com/matalha786/live-website-detector" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Websites</a>
                     </div>
                 </div>
 
@@ -528,138 +280,77 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Final Year Project Highlight -->
+    <section class="fyp-section section-padding">
+        <div class="container reveal">
+            <div class="fyp-box">
+                <h2 class="section-title">Final Year Project Highlight</h2>
+                <h3>Portable Wi-Fi Deauthentication Testing System <span class="cite">[cite: 4]</span></h3>
+                <p>A low-cost portable wireless security testing device built using NodeMCU ESP8266 for authorized assessment of IEEE 802.11 security configurations and controlled deauthentication behavior <span class="cite">[cite: 4]</span>.</p>
+                <div class="tech-stack">
+                    <span>NodeMCU ESP8266</span><span>C/C++</span><span>IEEE 802.11</span><span>Wireless Security</span>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://github.com/matalha786/esp8266_deauther" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> View Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
     <section id="experience" class="timeline-section section-padding">
         <div class="container">
-            <div class="section-header center-text reveal">
-                <span class="section-tag">CAREER PATH</span>
-                <h2 class="section-title">Professional Experience</h2>
-            </div>
-
+            <h2 class="section-title reveal">Professional Experience</h2>
             <div class="timeline">
-
-                <!-- Experience 1 -->
+                
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>IT Executive</h3>
-                                <h4>Toyota Royal Motors | Rahim Yar Khan</h4>
-                            </div>
-                            <span class="timeline-date">Mar 2025 – Aug 2026</span>
-                        </div>
+                        <span class="timeline-date">Mar 2025 - Aug 2026 <span class="cite">[cite: 4]</span></span>
+                        <h3>IT Assistant Manager <span class="cite">[cite: 4]</span></h3>
+                        <h4>Toyota Royal Motors, Rahim Yar Khan <span class="cite">[cite: 4]</span></h4>
                         <ul>
-                            <li>Managed IT infrastructure, wired/wireless networks, SQL Windows servers, NAS, routers,
-                                and end-user hardware.</li>
-                            <li>Implemented backup & disaster recovery (Acronis) and VNC centralized support for 50+
-                                network devices and 70+ workstations.</li>
-                            <li>Administered Google Workspace (user provisioning, security, policies) and Time Office
-                                biometric attendance.</li>
-                            <li>Managed IP-based CCTV surveillance (NVR), digital marketing, graphic content creation,
-                                and corporate media.</li>
+                            <li>Managed IT infrastructure, wired/wireless networks, SQL-based Windows servers, NAS, and routers <span class="cite">[cite: 4]</span>.</li>
+                            <li>Implemented backup & disaster recovery procedures and VNC for centralized support <span class="cite">[cite: 4]</span>.</li>
+                            <li>Administered Google Workspace and Time Office, managing user provisioning and security settings <span class="cite">[cite: 4]</span>.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Experience 2 -->
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>IT Assistant</h3>
-                                <h4>Chaudhry Sugar Mills Ltd</h4>
-                            </div>
-                            <span class="timeline-date">Sep 2024 – Mar 2025</span>
-                        </div>
+                        <span class="timeline-date">Sep 2024 - Mar 2025 <span class="cite">[cite: 4]</span></span>
+                        <h3>IT Assistant <span class="cite">[cite: 4]</span></h3>
+                        <h4>Chaudhry Sugar Mills Ltd <span class="cite">[cite: 4]</span></h4>
                         <ul>
-                            <li>Led network and system upgrades across 3 weighbridges and 70+ workstations, resolving
-                                50% of IT tickets within 24 hours and boosting uptime by 10%.</li>
-                            <li>Configured Active Directory domain joining, Group Policy (GPO), HP LaserJet printers,
-                                scanners, and hardware maintenance.</li>
-                            <li>Supported pfSense, MikroTik, Fortinet, and NETGATE Firewalls; documented configuration &
-                                incident logs.</li>
+                            <li>Led network and system upgrades across weighbridges and 70+ workstations <span class="cite">[cite: 4]</span>.</li>
+                            <li>Supported Windows administration, Active Directory, Group Policy, pfSense, MikroTik, and Fortinet Firewalls <span class="cite">[cite: 4]</span>.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Experience 3 -->
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Internship Trainee (Cybersecurity)</h3>
-                                <h4>ITSOLERA PVT LTD</h4>
-                            </div>
-                            <span class="timeline-date">Jun 2024 – Sep 2024</span>
-                        </div>
+                        <span class="timeline-date">Jun 2024 - Sep 2024 <span class="cite">[cite: 4]</span></span>
+                        <h3>Internship Trainee <span class="cite">[cite: 4]</span></h3>
+                        <h4>ITSOLERA Pvt. Ltd. <span class="cite">[cite: 4]</span></h4>
                         <ul>
-                            <li>Conducted Web Application Penetration Testing (WAPT) and Vulnerability Assessments.</li>
-                            <li>Led <strong>Team Zeta</strong> in Red Team operations and documented security risks with
-                                actionable remediation paths.</li>
-                            <li>Developed Python & Bash tools for OSINT, metadata extraction, and automated security
-                                reconnaissance.</li>
+                            <li>Conducted Web Application Penetration Testing & Vulnerability Assessments <span class="cite">[cite: 4]</span>.</li>
+                            <li>Led Team Zeta in Red Team exercises and developed Python/Bash tools for OSINT and reconnaissance <span class="cite">[cite: 4]</span>.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Experience 4 -->
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Python Dev & IT Administrator</h3>
-                                <h4>Prodigy InfoTech / CodeAlpha | DevCastle Builtinsoft</h4>
-                            </div>
-                            <span class="timeline-date">2024</span>
-                        </div>
+                        <span class="timeline-date">May 2021 - May 2024 <span class="cite">[cite: 4]</span></span>
+                        <h3>Course Instructor & Teaching Assistant <span class="cite">[cite: 4]</span></h3>
+                        <h4>Udemy / NAVTTC <span class="cite">[cite: 4]</span></h4>
                         <ul>
-                            <li>Developed custom security scripts: image encryption tools, packet sniffers, and
-                                keystroke logging utilities.</li>
-                            <li>Managed computer lab operations, network configurations, and office administration.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience 5 -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Teaching Assistant (Cybersecurity)</h3>
-                                <h4>NAVTTC, IUB-RYK Campus</h4>
-                            </div>
-                            <span class="timeline-date">Mar 2022</span>
-                        </div>
-                        <ul>
-                            <li>Facilitated NAVTTC cybersecurity training; delivered hands-on instruction in VAPT,
-                                network scanning, and malware analysis.</li>
-                            <li>Mentored 50+ students in practical penetration testing techniques and real-world
-                                security assessments.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience 6 -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Course Instructor</h3>
-                                <h4>Udemy Platform</h4>
-                            </div>
-                            <span class="timeline-date">May 2021 – May 2024</span>
-                        </div>
-                        <ul>
-                            <li>Created and published 30+ hands-on CEH v11 virtual lab modules for 2,000+ enrolled
-                                students.</li>
-                            <li>Covered SQL injection, wireless security, reconnaissance, network sniffing, and DoS
-                                mitigation.</li>
+                            <li>Developed and delivered 30+ hands-on training modules for 1,000+ students covering VAPT, network scanning, and malware analysis <span class="cite">[cite: 4]</span>.</li>
                         </ul>
                     </div>
                 </div>
@@ -668,84 +359,41 @@
         </div>
     </section>
 
-    <!-- Certifications & Education Section -->
+    <!-- Certifications -->
     <section id="certifications" class="certifications-section section-padding">
         <div class="container">
-            <div class="section-header center-text reveal">
-                <span class="section-tag">CREDENTIALS & DEGREES</span>
-                <h2 class="section-title">Certifications & Education</h2>
-            </div>
-
+            <h2 class="section-title reveal">Certifications & Education</h2>
             <div class="cert-grid">
                 <div class="cert-card reveal">
-                    <div class="cert-icon"><i class="fas fa-user-graduate"></i></div>
-                    <h4>BS Cyber Security</h4>
-                    <p class="cert-issuer">Islamia University of Bahawalpur (RYK)</p>
-                    <span class="cert-detail">CGPA: 3.5 / 4.0 | 2020 – 2024</span>
-                </div>
-
-                <div class="cert-card reveal" style="transition-delay: 0.1s;">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <i class="fas fa-certificate"></i>
                     <h4>Certificate in Cyber Security</h4>
-                    <p class="cert-issuer">NAVTTC Govt. Pakistan</p>
-                    <span class="cert-detail">Mar 2022 – Dec 2022</span>
+                    <p>NAVTTC Government <span class="cite">[cite: 4]</span></p>
                 </div>
-
-                <div class="cert-card reveal" style="transition-delay: 0.2s;">
-                    <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
-                    <h4>Offensive Penetration Testing</h4>
-                    <p class="cert-issuer">Cybrary.com</p>
-                    <span class="cert-detail">Advanced Pen-Testing Training</span>
-                </div>
-
-                <div class="cert-card reveal" style="transition-delay: 0.3s;">
-                    <div class="cert-icon"><i class="fas fa-lock"></i></div>
-                    <h4>Certified in Cybersecurity (CC)</h4>
-                    <p class="cert-issuer">(ISC)²</p>
-                    <span class="cert-detail">Self-Paced Professional Track</span>
-                </div>
-
                 <div class="cert-card reveal">
-                    <div class="cert-icon"><i class="fas fa-file-shield"></i></div>
+                    <i class="fas fa-certificate"></i>
+                    <h4>Offensive Penetration Testing</h4>
+                    <p>Cybrary <span class="cite">[cite: 4]</span></p>
+                </div>
+                <div class="cert-card reveal">
+                    <i class="fas fa-certificate"></i>
                     <h4>Ethical Hacking Essentials</h4>
-                    <p class="cert-issuer">Code Red | EC-Council</p>
-                    <span class="cert-detail">Fundamental Pen-Testing Credential</span>
+                    <p>EC-Council <span class="cite">[cite: 4]</span></p>
                 </div>
-
-                <div class="cert-card reveal" style="transition-delay: 0.1s;">
-                    <div class="cert-icon"><i class="fas fa-mobile-screen-button"></i></div>
-                    <h4>Mobile App Security</h4>
-                    <p class="cert-issuer">Cybrary.com</p>
-                    <span class="cert-detail">iOS & Android VAPT Analysis</span>
+                <div class="cert-card reveal">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certified in Cybersecurity (CC)</h4>
+                    <p>ISC2 <span class="cite">[cite: 4]</span></p>
                 </div>
-
-                <div class="cert-card reveal" style="transition-delay: 0.2s;">
-                    <div class="cert-icon"><i class="fas fa-triangle-exclamation"></i></div>
-                    <h4>CRISC Certification</h4>
-                    <p class="cert-issuer">Cybrary.com</p>
-                    <span class="cert-detail">Risk & Information Systems Control</span>
+                <div class="cert-card reveal">
+                    <i class="fas fa-certificate"></i>
+                    <h4>CRISC</h4>
+                    <p>Cybrary <span class="cite">[cite: 4]</span></p>
                 </div>
-
-                <div class="cert-card reveal" style="transition-delay: 0.3s;">
-                    <div class="cert-icon"><i class="fas fa-file-word"></i></div>
-                    <h4>Microsoft Word Certification</h4>
-                    <p class="cert-issuer">Eduonix</p>
-                    <span class="cert-detail">Document & Office Automation</span>
+                <div class="cert-card reveal">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>BS Cyber Security</h4>
+                    <p>The Islamia University of Bahawalpur (2020 - 2024)<br>CGPA: 3.5 / 4 <span class="cite">[cite: 4]</span></p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Open Source GitHub CTA -->
-    <section class="github-section section-padding">
-        <div class="container center-text reveal">
-            <div class="github-box">
-                <i class="fab fa-github github-big-icon"></i>
-                <h2>Explore Security Repositories & Tools</h2>
-                <p>Access Python OSINT tools, packet sniffers, security assessment frameworks, and research scripts.</p>
-                <a href="https://github.com/matalha786" target="_blank" class="btn btn-primary btn-lg">
-                    <i class="fab fa-github"></i> Visit @matalha786 on GitHub
-                </a>
             </div>
         </div>
     </section>
@@ -753,66 +401,40 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
         <div class="container">
-            <div class="section-header center-text reveal">
-                <span class="section-tag">GET IN TOUCH</span>
-                <h2 class="section-title">Let's Connect & Collaborate</h2>
-                <p class="contact-sub">Open for full-time Cybersecurity, Red Team, VAPT, or IT Infrastructure
-                    opportunities.</p>
-            </div>
-
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <p class="contact-sub reveal">Open to discussions with employers, recruiters, technical collaborators, and cybersecurity teams.</p>
+            
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email Address</h4>
-                            <a href="mailto:ahmedtalha470@gmail.com">ahmedtalha470@gmail.com</a>
+                            <h4>Email</h4>
+                            <a href="mailto:ahmedtalha470@gmail.com">ahmedtalha470@gmail.com <span class="cite">[cite: 4]</span></a>
                         </div>
                     </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone & WhatsApp</h4>
-                            <a href="tel:+923023070227">+92 3023070227</a>
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+923023070227">+92 3023070227 <span class="cite">[cite: 4]</span></a>
                         </div>
                     </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Location</h4>
-                            <p>Rahim Yar Khan, Pakistan</p>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
-                        <div>
-                            <h4>LinkedIn Profile</h4>
-                            <a href="https://linkedin.com/in/ahmedtalha470"
-                                target="_blank">linkedin.com/in/ahmedtalha470</a>
+                            <p>Rahim Yar Khan, Pakistan <span class="cite">[cite: 4]</span></p>
                         </div>
                     </div>
                 </div>
 
-                <form class="contact-form reveal" id="portfolio-contact-form">
-                    <h3>Send a Direct Message</h3>
-                    <div class="form-group">
-                        <input type="text" id="form-name" name="name" placeholder="Your Full Name" required
-                            aria-label="Name">
-                        <input type="email" id="form-email" name="email" placeholder="Your Email Address" required
-                            aria-label="Email">
-                    </div>
-                    <input type="text" id="form-subject" name="subject"
-                        placeholder="Subject (e.g. Job Opportunity / Collaboration)" required aria-label="Subject">
-                    <textarea id="form-message" name="message" rows="5" placeholder="Write your message here..."
-                        required aria-label="Message"></textarea>
-                    <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                    <div id="form-status" class="form-status-msg"></div>
-                </form>
+                <div class="contact-cta reveal" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--surface-color); padding: 3rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <i class="fas fa-paper-plane" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-family: var(--font-heading); font-size: 1.8rem;">Send Me a Message</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 400px;">Please use the secure Google Form below to reach out for opportunities or collaboration.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 35px;">Open Contact Form</a>
+                </div>
             </div>
         </div>
     </section>
@@ -822,31 +444,24 @@
         <div class="container footer-content">
             <div class="footer-brand">
                 <h3>Muhammad Ahmed Talha</h3>
-                <p>Cybersecurity Specialist | Penetration Tester | IT Executive</p>
+                <p>Cybersecurity | IT Infrastructure | Penetration Testing <span class="cite">[cite: 4]</span></p>
             </div>
             <div class="social-links">
-                <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/ahmedtalha470" target="_blank" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/ahmedtalha470" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="mailto:ahmedtalha470@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://wa.me/923023070227" target="_blank" aria-label="WhatsApp"><i
-                        class="fab fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Muhammad Ahmed Talha. All rights reserved. Built with passion & security.</p>
+            <p>&copy; 2026 Muhammad Ahmed Talha. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scroll Progress Bar -->
+    <!-- Scroll Progress -->
     <div class="scroll-progress"></div>
-
-    <!-- Back to Top Button -->
     <a href="#" class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></a>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
