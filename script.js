@@ -1,5 +1,14 @@
+// Force page to start from top on refresh
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+});
+
 // Preloader functionality
 window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
     const preloader = document.getElementById('preloader');
     if (preloader) {
         setTimeout(() => {
