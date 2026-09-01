@@ -96,7 +96,7 @@
         <div class="hero-glow-2"></div>
 
         <div class="container hero-grid">
-            <div class="hero-content reveal">
+            <div class="hero-content">
                 <div class="status-badge">
                     <span class="status-dot"></span> OPEN TO CYBERSECURITY & IT INFRASTRUCTURE OPPORTUNITIES
                 </div>
@@ -136,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="hero-visual reveal">
+            <div class="hero-visual">
                 <div class="portrait-card">
                     <div class="portrait-ring"></div>
                     <div class="portrait-wrapper">
@@ -194,19 +194,19 @@
                 <p>Years Experience</p>
                 <span class="stat-sub">IT & Cybersecurity Operations</span>
             </div>
-            <div class="stat-card reveal" style="transition-delay: 0.1s;">
+            <div class="stat-card reveal">
                 <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
-                <h3><span class="counter" data-target="2000">2000</span><span class="plus">+</span></h3>
+                <h3><span class="counter" data-target="3000">3000</span><span class="plus">+</span></h3>
                 <p>Students Trained</p>
-                <span class="stat-sub">Udemy & Virtual Labs</span>
+                <span class="stat-sub">Udemy & Labs</span>
             </div>
-            <div class="stat-card reveal" style="transition-delay: 0.2s;">
+            <div class="stat-card reveal">
                 <div class="stat-icon"><i class="fas fa-desktop"></i></div>
-                <h3><span class="counter" data-target="100">100</span><span class="plus">+</span></h3>
+                <h3><span class="counter" data-target="200">200</span><span class="plus">+</span></h3>
                 <p>Workstations Managed</p>
-                <span class="stat-sub">Toyota & CSM Systems</span>
+                <span class="stat-sub">TRM & CSML Systems</span>
             </div>
-            <div class="stat-card reveal" style="transition-delay: 0.3s;">
+            <div class="stat-card reveal">
                 <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
                 <h3><span class="counter" data-target="10">10</span><span class="plus">+</span></h3>
                 <p>Custom Security Tools</p>
@@ -231,8 +231,8 @@
                         <div class="about-badge">
                             <i class="fas fa-microphone-alt"></i>
                             <div>
-                                <strong>BZU CIT Panelist</strong>
-                                <span>Conference Speaker 2026</span>
+                                <strong>BZU Multan - CIT Panelist</strong>
+                                <span>Conference Speaker</span>
                             </div>
                         </div>
                     </div>
@@ -309,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category reveal" style="transition-delay: 0.1s;">
+                <div class="skill-category reveal">
                     <div class="category-header">
                         <i class="fas fa-toolbox"></i>
                         <h3>Security Tools & SIEM</h3>
@@ -324,7 +324,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category reveal" style="transition-delay: 0.2s;">
+                <div class="skill-category reveal">
                     <div class="category-header">
                         <i class="fas fa-network-wired"></i>
                         <h3>Networking & Infrastructure</h3>
@@ -340,7 +340,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category reveal" style="transition-delay: 0.3s;">
+                <div class="skill-category reveal">
                     <div class="category-header">
                         <i class="fas fa-code"></i>
                         <h3>Scripting & Cloud</h3>
@@ -412,7 +412,7 @@
                 </div>
 
                 <!-- 2. user-finder -->
-                <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">OSINT Reconnaissance</span>
                         <div class="project-links">
@@ -433,7 +433,7 @@
                 </div>
 
                 <!-- 3. meta-data-extractor-zeta -->
-                <div class="project-card reveal" style="transition-delay: 0.2s;">
+                <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">Digital Forensics</span>
                         <div class="project-links">
@@ -454,7 +454,7 @@
                 </div>
 
                 <!-- 4. AI-Video-Watermark-Remover-Pro -->
-                <div class="project-card reveal" style="transition-delay: 0.3s;">
+                <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">AI & Vision Application</span>
                         <div class="project-links">
@@ -497,7 +497,7 @@
                 </div>
 
                 <!-- 6. live-website-detector -->
-                <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">Red Team Recon</span>
                         <div class="project-links">
@@ -518,7 +518,7 @@
                 </div>
 
                 <!-- 7. live-proxy-detector -->
-                <div class="project-card reveal" style="transition-delay: 0.2s;">
+                <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">Network Security</span>
                         <div class="project-links">
@@ -539,7 +539,7 @@
                 </div>
 
                 <!-- 8. slowlorisAdvancedVersion -->
-                <div class="project-card reveal" style="transition-delay: 0.3s;">
+                <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">Stress Testing</span>
                         <div class="project-links">
@@ -563,24 +563,30 @@
                 <!-- 9. Prodigy Security Tools (Grouped) -->
                 <div class="project-card grouped-suite-card reveal">
                     <div class="project-header">
-                        <span class="project-badge fyp-badge"><i class="fas fa-layer-group"></i> Grouped Security Suite</span>
+                        <span class="project-badge fyp-badge"><i class="fas fa-layer-group"></i> Grouped Security
+                            Suite</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/matalha786" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <h3>Prodigy Cyber Security Research Suite</h3>
-                    <p>Unified cybersecurity research suite containing a raw network packet sniffer (Scapy), an endpoint keystroke telemetry monitor, and RGB pixel manipulation image cryptography.</p>
+                    <p>Unified cybersecurity research suite containing a raw network packet sniffer (Scapy), an endpoint
+                        keystroke telemetry monitor, and RGB pixel manipulation image cryptography.</p>
                     <div class="tech-stack">
                         <span>Python</span><span>Scapy</span><span>Cryptography</span><span>Endpoint Security</span>
                     </div>
                     <div class="grouped-repo-buttons">
-                        <a href="https://github.com/matalha786/PRODIGY_CS_05_packet_sniffer" target="_blank" rel="noopener noreferrer" class="project-github-btn">
+                        <a href="https://github.com/matalha786/PRODIGY_CS_05_packet_sniffer" target="_blank"
+                            rel="noopener noreferrer" class="project-github-btn">
                             <i class="fab fa-github"></i> Packet Sniffer Repo
                         </a>
-                        <a href="https://github.com/matalha786/PRODIGY_CS_04_keylogger" target="_blank" rel="noopener noreferrer" class="project-github-btn">
+                        <a href="https://github.com/matalha786/PRODIGY_CS_04_keylogger" target="_blank"
+                            rel="noopener noreferrer" class="project-github-btn">
                             <i class="fab fa-github"></i> Keystroke Logger Repo
                         </a>
-                        <a href="https://github.com/matalha786/PRODIGY_CS_02_Pixel_Manipulation_Image_Encryption" target="_blank" rel="noopener noreferrer" class="project-github-btn">
+                        <a href="https://github.com/matalha786/PRODIGY_CS_02_Pixel_Manipulation_Image_Encryption"
+                            target="_blank" rel="noopener noreferrer" class="project-github-btn">
                             <i class="fab fa-github"></i> Image Encryption Repo
                         </a>
                     </div>
@@ -746,21 +752,21 @@
                     <span class="cert-detail">CGPA: 3.5 / 4.0 | 2020 – 2024</span>
                 </div>
 
-                <div class="cert-card reveal" style="transition-delay: 0.1s;">
+                <div class="cert-card reveal">
                     <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                     <h4>Certificate in Cyber Security</h4>
                     <p class="cert-issuer">NAVTTC Govt. Pakistan</p>
                     <span class="cert-detail">Mar 2022 – Dec 2022</span>
                 </div>
 
-                <div class="cert-card reveal" style="transition-delay: 0.2s;">
+                <div class="cert-card reveal">
                     <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
                     <h4>Offensive Penetration Testing</h4>
                     <p class="cert-issuer">Cybrary.com</p>
                     <span class="cert-detail">Advanced Pen-Testing Training</span>
                 </div>
 
-                <div class="cert-card reveal" style="transition-delay: 0.3s;">
+                <div class="cert-card reveal">
                     <div class="cert-icon"><i class="fas fa-lock"></i></div>
                     <h4>Certified in Cybersecurity (CC)</h4>
                     <p class="cert-issuer">(ISC)²</p>
@@ -774,21 +780,21 @@
                     <span class="cert-detail">Fundamental Pen-Testing Credential</span>
                 </div>
 
-                <div class="cert-card reveal" style="transition-delay: 0.1s;">
+                <div class="cert-card reveal">
                     <div class="cert-icon"><i class="fas fa-mobile-screen-button"></i></div>
                     <h4>Mobile App Security</h4>
                     <p class="cert-issuer">Cybrary.com</p>
                     <span class="cert-detail">iOS & Android VAPT Analysis</span>
                 </div>
 
-                <div class="cert-card reveal" style="transition-delay: 0.2s;">
+                <div class="cert-card reveal">
                     <div class="cert-icon"><i class="fas fa-triangle-exclamation"></i></div>
                     <h4>CRISC Certification</h4>
                     <p class="cert-issuer">Cybrary.com</p>
                     <span class="cert-detail">Risk & Information Systems Control</span>
                 </div>
 
-                <div class="cert-card reveal" style="transition-delay: 0.3s;">
+                <div class="cert-card reveal">
                     <div class="cert-icon"><i class="fas fa-file-word"></i></div>
                     <h4>Microsoft Word Certification</h4>
                     <p class="cert-issuer">Eduonix</p>
