@@ -14,14 +14,14 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             preloader.style.opacity = '0';
             preloader.style.visibility = 'hidden';
-            setTimeout(() => preloader.remove(), 500);
-        }, 600);
+            setTimeout(() => preloader.remove(), 100);
+        }, 50);
     }
 });
 
 // Typewriter Effect for Hero Roles
 class TypeWriter {
-    constructor(txtElement, words, wait = 2000) {
+    constructor(txtElement, words, wait = 10) {
         this.txtElement = txtElement;
         this.words = words;
         this.txt = '';
@@ -43,9 +43,9 @@ class TypeWriter {
 
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-        let typeSpeed = 100;
+        let typeSpeed = 50;
         if (this.isDeleting) {
-            typeSpeed /= 2;
+            typeSpeed = 25;
         }
 
         if (!this.isDeleting && this.txt === fullTxt) {
@@ -54,7 +54,7 @@ class TypeWriter {
         } else if (this.isDeleting && this.txt === '') {
             this.isDeleting = false;
             this.wordIndex++;
-            typeSpeed = 400;
+            typeSpeed = 150;
         }
 
         setTimeout(() => this.type(), typeSpeed);
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const txtElement = document.querySelector('.typewriter');
     if (txtElement) {
         const words = JSON.parse(txtElement.getAttribute('data-words'));
-        new TypeWriter(txtElement, words, 2200);
+        new TypeWriter(txtElement, words, 1000);
     }
 });
 
@@ -135,7 +135,7 @@ if (themeToggle) {
     themeToggle.addEventListener('click', () => {
         let currentTheme = htmlTag.getAttribute('data-theme');
         let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         htmlTag.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcon(newTheme);
@@ -161,14 +161,14 @@ const revealOptions = {
     rootMargin: "0px 0px -40px 0px"
 };
 
-const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+const revealOnScroll = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            
+
             const counters = entry.target.querySelectorAll('.counter');
             counters.forEach(counter => runCounter(counter));
-            
+
             observer.unobserve(entry.target);
         }
     });
@@ -191,21 +191,25 @@ function runCounter(counter) {
         return;
     }
 
-    let current = 0;
-    const duration = 1500;
-    const steps = 50;
-    const stepTime = duration / steps;
-    const inc = target / steps;
+    const duration = 10; // 120ms ultra-fast count-up
+    const startTime = performance.now();
 
-    const timer = setInterval(() => {
-        current += inc;
-        if (current >= target) {
-            counter.innerText = target;
-            clearInterval(timer);
+    function updateCounter(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 3); // Snappy ease-out curve
+        const currentValue = Math.floor(easeProgress * target);
+
+        counter.innerText = currentValue;
+
+        if (progress < 1) {
+            requestAnimationFrame(updateCounter);
         } else {
-            counter.innerText = Math.floor(current);
+            counter.innerText = target;
         }
-    }, stepTime);
+    }
+
+    requestAnimationFrame(updateCounter);
 }
 
 // Contact Form Interactive Handling
@@ -217,21 +221,21 @@ if (contactForm && formStatus) {
         e.preventDefault();
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const origText = submitBtn.innerHTML;
-        
+
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending Message...';
-        
+
         setTimeout(() => {
             submitBtn.disabled = false;
             submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
             formStatus.style.color = 'var(--primary-color)';
             formStatus.innerHTML = 'Thank you! Your message has been sent successfully.';
             contactForm.reset();
-            
+
             setTimeout(() => {
                 submitBtn.innerHTML = origText;
                 formStatus.innerHTML = '';
-            }, 5000);
-        }, 1200);
+            }, 3000);
+        }, 300);
     });
 }
