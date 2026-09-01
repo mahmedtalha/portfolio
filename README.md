@@ -30,7 +30,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">\
-    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="icon" type="image/jpeg" href="./favicon.jpg?v=2">
 </head>
 
 <body>
