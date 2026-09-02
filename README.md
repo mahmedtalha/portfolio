@@ -28,9 +28,13 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">\
-    <link rel="icon" type="image/jpeg" href="./favicon.jpg?v=2">
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
+<link rel="shortcut icon" type="image/jpeg" href="favicon.jpg?v=3">
+<link rel="apple-touch-icon" href="favicon.jpg?v=3">
 </head>
 
 <body>
