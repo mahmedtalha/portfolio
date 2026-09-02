@@ -136,7 +136,7 @@ img {
 }
 
 .section-padding {
-    padding: 110px 0;
+    padding: 54px 0;
 }
 
 .section-header {
@@ -541,6 +541,19 @@ img {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     min-height: 2.2rem;
+    display: grid;
+}
+
+/* Reserve the longest role's space so the typewriter cannot shift the page. */
+.hero-subtitle::before,
+.hero-subtitle .typewriter {
+    grid-area: 1 / 1;
+}
+
+.hero-subtitle::before {
+    content: "Cybersecurity Specialist";
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .hero-bio {
@@ -728,7 +741,9 @@ img {
 
 .marquee {
     display: inline-block;
-    animation: marquee 35s linear infinite;
+    width: max-content;
+    max-width: none;
+    animation: marquee 18s linear infinite;
 }
 
 .marquee span {
@@ -770,6 +785,21 @@ img {
     transition: all var(--transition-normal);
 }
 
+/* Quick staggered entrance for the statistics row. */
+.stat-card.reveal {
+    transform: translateY(18px) scale(0.98);
+    transition: opacity 240ms ease, transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.stat-card.reveal:nth-child(2) { transition-delay: 55ms; }
+.stat-card.reveal:nth-child(3) { transition-delay: 110ms; }
+.stat-card.reveal:nth-child(4) { transition-delay: 165ms; }
+
+.stat-card.reveal.active {
+    transform: translateY(0) scale(1);
+}
+
 .stat-card:hover {
     transform: translateY(-6px);
     border-color: var(--primary-color);
@@ -788,6 +818,18 @@ img {
     color: var(--text-primary);
     line-height: 1;
     margin-bottom: 0.5rem;
+}
+
+.stat-card h3.is-counting {
+    color: var(--primary-color);
+}
+
+.stat-card h3.count-complete {
+    animation: stat-number-pop 220ms ease-out;
+}
+
+@keyframes stat-number-pop {
+    50% { transform: scale(1.06); }
 }
 
 .stat-card .plus {
@@ -1647,7 +1689,7 @@ body {
     }
 
     .section-padding {
-        padding: 70px 0;
+        padding: 36px 0;
     }
 
     .projects-grid {
@@ -1728,7 +1770,7 @@ body {
 
     .hero-subtitle {
         font-size: 1.15rem;
-        min-height: auto;
+        min-height: 2.9rem;
         word-break: break-word;
     }
 

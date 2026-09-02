@@ -191,8 +191,12 @@ function runCounter(counter) {
         return;
     }
 
-    const duration = 10; // 120ms ultra-fast count-up
+    const duration = 550; // Short enough to feel responsive, long enough to read
     const startTime = performance.now();
+    const numberHeading = counter.closest('h3');
+
+    counter.innerText = '0';
+    numberHeading?.classList.add('is-counting');
 
     function updateCounter(now) {
         const elapsed = now - startTime;
@@ -200,12 +204,14 @@ function runCounter(counter) {
         const easeProgress = 1 - Math.pow(1 - progress, 3); // Snappy ease-out curve
         const currentValue = Math.floor(easeProgress * target);
 
-        counter.innerText = currentValue;
+        counter.innerText = currentValue.toLocaleString();
 
         if (progress < 1) {
             requestAnimationFrame(updateCounter);
         } else {
-            counter.innerText = target;
+            counter.innerText = target.toLocaleString();
+            numberHeading?.classList.remove('is-counting');
+            numberHeading?.classList.add('count-complete');
         }
     }
 
