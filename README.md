@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Ahmed Talha | Cybersecurity & IT Infrastructure Specialist</title>
+    <title>Muhammad Ahmed Talha | Cybersecurity Instructor & IT Infrastructure Manager Specialist</title>
     <meta name="description"
         content="Portfolio of Muhammad Ahmed Talha - Cybersecurity Specialist, IT Assistant Manager, Penetration Tester, and Security Tool Developer with 4+ years of experience.">
     <meta name="keywords"
@@ -28,9 +28,14 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">\
-    <link rel="icon" type="image/jpeg" href="./favicon.jpg?v=2">
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jarvis-aichatbot.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="favicon.jpg?v=3">
+<link rel="shortcut icon" type="image/jpeg" href="favicon.jpg?v=3">
+<link rel="apple-touch-icon" href="favicon.jpg?v=3">
 </head>
 
 <body>
@@ -60,11 +65,11 @@
                 <a href="#experience">Experience</a>
                 <a href="#speaking">Speaking</a>
                 <a href="#certifications">Certifications</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
                     target="_blank" rel="noopener noreferrer" class="nav-contact-link"><i
                         class="fas fa-paper-plane"></i> Contact Form</a>
                 <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
-                <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline nav-resume" download target="_blank">
+                <a href="https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline nav-resume" download target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-file-download"></i> Resume
                 </a>
             </div>
@@ -83,9 +88,9 @@
         <a href="#experience">Experience</a>
         <a href="#speaking">Achievements</a>
         <a href="#certifications">Certifications</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472"
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
             target="_blank" rel="noopener noreferrer"><i class="fas fa-paper-plane"></i> Contact Form</a>
-        <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-primary" download target="_blank">
+        <a href="https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-primary" download target="_blank" rel="noopener noreferrer">
             <i class="fas fa-download"></i> Download Resume PDF
         </a>
     </div>
@@ -120,14 +125,14 @@
 
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary"><i class="fas fa-code-branch"></i> View Projects</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472"
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
                         target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Contact Me
                     </a>
                 </div>
 
                 <div class="social-links">
-                    <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
+                    <a href="https://github.com/mahmedtalha" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                             class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/ahmedtalha470" target="_blank" aria-label="LinkedIn"><i
                             class="fab fa-linkedin-in"></i></a>
@@ -203,9 +208,9 @@
             </div>
             <div class="stat-card reveal">
                 <div class="stat-icon"><i class="fas fa-desktop"></i></div>
-                <h3><span class="counter" data-target="200">200</span><span class="plus">+</span></h3>
+                <h3><span class="counter" data-target="250">250</span><span class="plus">+</span></h3>
                 <p>Workstations Managed</p>
-                <span class="stat-sub">TRM & CSML Systems</span>
+                <span class="stat-sub">TRM, CSML &amp; ABS</span>
             </div>
             <div class="stat-card reveal">
                 <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
@@ -244,7 +249,7 @@
                     <p class="about-description">
                         I am a <strong>BS Cyber Security graduate</strong> and experienced IT Infrastructure
                         professional. Over the past 4+ years, I have engineered security tools, managed enterprise IT
-                        environments, led Red Team assessments, and trained over 2,000 students in practical ethical
+                        environments, led Red Team assessments, and trained over 3,000 students in practical ethical
                         hacking.
                     </p>
                     <p class="about-description">
@@ -274,10 +279,10 @@
                     </div>
 
                     <div class="about-actions">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472"
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
                             target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i
                                 class="fas fa-paper-plane"></i> Get in Touch</a>
-                        <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline" download target="_blank">
+                        <a href="https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline" download target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-alt"></i> Resume Details
                         </a>
                     </div>
@@ -396,7 +401,7 @@
                     <div class="project-header">
                         <span class="project-badge">Recon & VAPT</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786/info-gathering" target="_blank"
+                            <a href="https://github.com/mahmedtalha/info-gathering" target="_blank"
                                 rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -406,7 +411,7 @@
                     <div class="tech-stack">
                         <span>Python</span><span>Nmap</span><span>OSINT</span><span>Reconnaissance</span>
                     </div>
-                    <a href="https://github.com/matalha786/info-gathering" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/mahmedtalha/info-gathering" target="_blank" rel="noopener noreferrer"
                         class="project-github-btn">
                         <i class="fab fa-github"></i> View Repository
                     </a>
@@ -417,7 +422,7 @@
                     <div class="project-header">
                         <span class="project-badge">OSINT Reconnaissance</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786/user-finder" target="_blank"
+                            <a href="https://github.com/mahmedtalha/user-finder" target="_blank"
                                 rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -427,7 +432,7 @@
                     <div class="tech-stack">
                         <span>Python</span><span>Multithreading</span><span>OSINT</span><span>API Scraping</span>
                     </div>
-                    <a href="https://github.com/matalha786/user-finder" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/mahmedtalha/user-finder" target="_blank" rel="noopener noreferrer"
                         class="project-github-btn">
                         <i class="fab fa-github"></i> View Repository
                     </a>
@@ -438,7 +443,7 @@
                     <div class="project-header">
                         <span class="project-badge">Digital Forensics</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786/meta-data-extractor-zeta" target="_blank"
+                            <a href="https://github.com/mahmedtalha/meta-data-extractor-zeta" target="_blank"
                                 rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -448,7 +453,7 @@
                     <div class="tech-stack">
                         <span>Python</span><span>OSINT</span><span>Digital Forensics</span><span>EXIF</span>
                     </div>
-                    <a href="https://github.com/matalha786/meta-data-extractor-zeta" target="_blank"
+                    <a href="https://github.com/mahmedtalha/meta-data-extractor-zeta" target="_blank"
                         rel="noopener noreferrer" class="project-github-btn">
                         <i class="fab fa-github"></i> View Repository
                     </a>
@@ -459,7 +464,7 @@
                     <div class="project-header">
                         <span class="project-badge">AI & Vision Application</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786/AI-Video-Watermark-Remover-Pro" target="_blank"
+                            <a href="https://github.com/mahmedtalha/AI-Video-Watermark-Remover-Pro" target="_blank"
                                 rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -469,7 +474,7 @@
                     <div class="tech-stack">
                         <span>Python</span><span>Florence-2</span><span>LaMA AI</span><span>PyQt GUI</span>
                     </div>
-                    <a href="https://github.com/matalha786/AI-Video-Watermark-Remover-Pro" target="_blank"
+                    <a href="https://github.com/mahmedtalha/AI-Video-Watermark-Remover-Pro" target="_blank"
                         rel="noopener noreferrer" class="project-github-btn">
                         <i class="fab fa-github"></i> View Repository
                     </a>
@@ -480,7 +485,7 @@
                     <div class="project-header">
                         <span class="project-badge">Wireless Defense</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786/WiFiDeauthDetectorNodeMCU" target="_blank"
+                            <a href="https://github.com/mahmedtalha/WiFiDeauthDetectorNodeMCU" target="_blank"
                                 rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -491,60 +496,18 @@
                         <span>NodeMCU ESP8266</span><span>C++</span><span>Wi-Fi Defense</span><span>Embedded
                             Systems</span>
                     </div>
-                    <a href="https://github.com/matalha786/WiFiDeauthDetectorNodeMCU" target="_blank"
+                    <a href="https://github.com/mahmedtalha/WiFiDeauthDetectorNodeMCU" target="_blank"
                         rel="noopener noreferrer" class="project-github-btn">
                         <i class="fab fa-github"></i> View Repository
                     </a>
                 </div>
 
-                <!-- 6. live-website-detector -->
-                <div class="project-card reveal">
-                    <div class="project-header">
-                        <span class="project-badge">Red Team Recon</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786/live-website-detector" target="_blank"
-                                rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Live Website Detector</h3>
-                    <p>High-speed HTTP/HTTPS live target validator that checks host status, SSL certificate validity,
-                        and HTTP response codes for target engagements.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Async IO</span><span>Network Recon</span><span>SSL Audit</span>
-                    </div>
-                    <a href="https://github.com/matalha786/live-website-detector" target="_blank"
-                        rel="noopener noreferrer" class="project-github-btn">
-                        <i class="fab fa-github"></i> View Repository
-                    </a>
-                </div>
-
-                <!-- 7. live-proxy-detector -->
-                <div class="project-card reveal">
-                    <div class="project-header">
-                        <span class="project-badge">Network Security</span>
-                        <div class="project-links">
-                            <a href="https://github.com/matalha786/live-proxy-detector" target="_blank"
-                                rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Live Proxy Detector</h3>
-                    <p>Multithreaded proxy verification tool built to scan active proxy servers, test connection
-                        latency, and prepare proxy lists for security testing.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Sockets</span><span>Network Security</span><span>Proxy Audit</span>
-                    </div>
-                    <a href="https://github.com/matalha786/live-proxy-detector" target="_blank"
-                        rel="noopener noreferrer" class="project-github-btn">
-                        <i class="fab fa-github"></i> View Repository
-                    </a>
-                </div>
-
-                <!-- 8. slowlorisAdvancedVersion -->
+                <!-- 6. slowlorisAdvancedVersion -->
                 <div class="project-card reveal">
                     <div class="project-header">
                         <span class="project-badge">Stress Testing</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786/slowlorisAdvancedVersion" target="_blank"
+                            <a href="https://github.com/mahmedtalha/slowlorisAdvancedVersion" target="_blank"
                                 rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -555,19 +518,46 @@
                         <span>Python</span><span>Socket Programming</span><span>DoS Simulation</span><span>Load
                             Testing</span>
                     </div>
-                    <a href="https://github.com/matalha786/slowlorisAdvancedVersion" target="_blank"
+                    <a href="https://github.com/mahmedtalha/slowlorisAdvancedVersion" target="_blank"
                         rel="noopener noreferrer" class="project-github-btn">
                         <i class="fab fa-github"></i> View Repository
                     </a>
                 </div>
 
-                <!-- 9. Prodigy Security Tools (Grouped) -->
+                <!-- 7. live-website-and-proxy-detectors — second-last card -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-badge">Recon &amp; Network Security</span>
+                        <div class="project-links">
+                            <a href="https://github.com/mahmedtalha/live-website-detector" target="_blank"
+                                rel="noopener noreferrer" aria-label="Live Website Detector GitHub"><i class="fas fa-globe"></i></a>
+                            <a href="https://github.com/mahmedtalha/live-proxy-detector" target="_blank"
+                                rel="noopener noreferrer" aria-label="Live Proxy Detector GitHub"><i class="fas fa-network-wired"></i></a>
+                        </div>
+                    </div>
+                    <h3>Live Website &amp; Proxy Detectors</h3>
+                    <p>Combined network reconnaissance toolkit for validating HTTP/HTTPS targets, SSL certificates and
+                        response codes, while also verifying active proxy servers and connection latency.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Async IO</span><span>Multithreading</span><span>SSL &amp; Proxy Audit</span>
+                    </div>
+                    <a href="https://github.com/mahmedtalha/live-website-detector" target="_blank"
+                        rel="noopener noreferrer" class="project-github-btn">
+                        <i class="fab fa-github"></i> Website Repo
+                    </a>
+                    <a href="https://github.com/mahmedtalha/live-proxy-detector" target="_blank"
+                        rel="noopener noreferrer" class="project-github-btn">
+                        <i class="fab fa-github"></i> Proxy Repo
+                    </a>
+                </div>
+
+                <!-- 8. Prodigy Security Tools (Grouped) -->
                 <div class="project-card grouped-suite-card reveal">
                     <div class="project-header">
                         <span class="project-badge fyp-badge"><i class="fas fa-layer-group"></i> Grouped Security
                             Suite</span>
                         <div class="project-links">
-                            <a href="https://github.com/matalha786" target="_blank" rel="noopener noreferrer"
+                            <a href="https://github.com/mahmedtalha" target="_blank" rel="noopener noreferrer"
                                 aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -578,15 +568,15 @@
                         <span>Python</span><span>Scapy</span><span>Cryptography</span><span>Endpoint Security</span>
                     </div>
                     <div class="grouped-repo-buttons">
-                        <a href="https://github.com/matalha786/PRODIGY_CS_05_packet_sniffer" target="_blank"
+                        <a href="https://github.com/mahmedtalha/PRODIGY_CS_05_packet_sniffer" target="_blank"
                             rel="noopener noreferrer" class="project-github-btn">
                             <i class="fab fa-github"></i> Packet Sniffer Repo
                         </a>
-                        <a href="https://github.com/matalha786/PRODIGY_CS_04_keylogger" target="_blank"
+                        <a href="https://github.com/mahmedtalha/PRODIGY_CS_04_keylogger" target="_blank"
                             rel="noopener noreferrer" class="project-github-btn">
                             <i class="fab fa-github"></i> Keystroke Logger Repo
                         </a>
-                        <a href="https://github.com/matalha786/PRODIGY_CS_02_Pixel_Manipulation_Image_Encryption"
+                        <a href="https://github.com/mahmedtalha/PRODIGY_CS_02_Pixel_Manipulation_Image_Encryption"
                             target="_blank" rel="noopener noreferrer" class="project-github-btn">
                             <i class="fab fa-github"></i> Image Encryption Repo
                         </a>
@@ -725,7 +715,7 @@
                             <span class="timeline-date">May 2021 – May 2024</span>
                         </div>
                         <ul>
-                            <li>Created and published 30+ hands-on CEH v11 virtual lab modules for 2,000+ enrolled
+                            <li>Created and published 30+ hands-on CEH v11 virtual lab modules for 3,000+ enrolled
                                 students.</li>
                             <li>Covered SQL injection, wireless security, reconnaissance, network sniffing, and DoS
                                 mitigation.</li>
@@ -812,9 +802,9 @@
                 <i class="fab fa-github github-big-icon"></i>
                 <h2>Explore Security Repositories & Tools</h2>
                 <p>Access Python OSINT tools, packet sniffers, security assessment frameworks, and research scripts.</p>
-                <a href="https://github.com/matalha786" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/mahmedtalha" target="_blank" rel="noopener noreferrer"
                     class="btn btn-primary btn-lg">
-                    <i class="fab fa-github"></i> Visit @matalha786 on GitHub
+                    <i class="fab fa-github"></i> Visit @mahmedtalha on GitHub
                 </a>
             </div>
         </div>
@@ -874,7 +864,7 @@
                                 <p>Fill out the online inquiry form directly</p>
                             </div>
                         </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing&ouid=104892023531005443472"
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
                             target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
                             <i class="fas fa-external-link-alt"></i> Open Google Form
                         </a>
@@ -910,7 +900,7 @@
                 <p>Cybersecurity Specialist | Penetration Tester | IT Assistant Manager</p>
             </div>
             <div class="social-links">
-                <a href="https://github.com/matalha786" target="_blank" aria-label="GitHub"><i
+                <a href="https://github.com/mahmedtalha" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/ahmedtalha470" target="_blank" aria-label="LinkedIn"><i
                         class="fab fa-linkedin-in"></i></a>
@@ -932,6 +922,7 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="jarvis-aichatbot.js" defer></script>
 </body>
 
 </html>
