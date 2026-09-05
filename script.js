@@ -178,6 +178,27 @@ revealElements.forEach(el => {
     revealOnScroll.observe(el);
 });
 
+// Accessible project filtering
+const projectFilters = document.querySelectorAll('.project-filter');
+const projectCards = document.querySelectorAll('.project-card[data-category]');
+
+projectFilters.forEach(button => {
+    button.addEventListener('click', () => {
+        const selectedFilter = button.dataset.filter;
+
+        projectFilters.forEach(filterButton => {
+            const isActive = filterButton === button;
+            filterButton.classList.toggle('active', isActive);
+            filterButton.setAttribute('aria-pressed', String(isActive));
+        });
+
+        projectCards.forEach(card => {
+            const categories = card.dataset.category.split(' ');
+            card.hidden = selectedFilter !== 'all' && !categories.includes(selectedFilter);
+        });
+    });
+});
+
 // Counter Animation Logic
 function runCounter(counter) {
     if (counter.dataset.animated === 'true') return;

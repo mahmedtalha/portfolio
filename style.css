@@ -218,6 +218,19 @@ img {
     color: var(--primary-color);
 }
 
+.btn-resume {
+    color: #06090e;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--primary-color));
+    border-color: transparent;
+    box-shadow: 0 6px 24px var(--primary-glow);
+}
+
+.btn-resume:hover {
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 34px var(--primary-glow);
+}
+
 .btn-outline:hover {
     background: var(--primary-color);
     color: #06090e;
@@ -1111,6 +1124,69 @@ img {
 }
 
 /* Projects Section */
+.projects-intro {
+    max-width: 720px;
+    margin: 1rem auto 0;
+    color: var(--text-secondary);
+}
+
+.expertise-highlights,
+.project-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.expertise-highlights {
+    margin: -1rem auto 1.5rem;
+}
+
+.expertise-highlights span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    color: var(--text-primary);
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+}
+
+.expertise-highlights i {
+    color: var(--primary-color);
+}
+
+.project-filters {
+    margin-bottom: 2rem;
+}
+
+.project-filter {
+    padding: 0.65rem 1rem;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font: 600 0.8rem var(--font-mono);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.project-filter:hover,
+.project-filter:focus-visible,
+.project-filter.active {
+    color: #06090e;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.project-card[hidden] {
+    display: none;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

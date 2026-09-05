@@ -9,7 +9,7 @@
     speaking: '#speaking',
     certifications: '#certifications',
     contactSection: '#contact',
-    resume: 'https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf',
+    resume: 'M-Ahmed-Talha-Resume-2026.pdf',
     github: 'https://github.com/mahmedtalha',
     linkedin: 'https://linkedin.com/in/ahmedtalha470',
     contact: 'https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing',

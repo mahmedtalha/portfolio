@@ -15,7 +15,7 @@
     <meta property="og:title" content="Muhammad Ahmed Talha | Cybersecurity & IT Infrastructure Specialist">
     <meta property="og:description"
         content="4+ Years Experience in Penetration Testing, Red Team Ops, Network Security & IT Infrastructure Management.">
-    <meta property="og:image" content="1769531770435~2.png">
+    <meta property="og:image" content="profile-photo.png">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
@@ -69,7 +69,7 @@
                     target="_blank" rel="noopener noreferrer" class="nav-contact-link"><i
                         class="fas fa-paper-plane"></i> Contact Form</a>
                 <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
-                <a href="https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline nav-resume" download target="_blank" rel="noopener noreferrer">
+                <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline nav-resume" download>
                     <i class="fas fa-file-download"></i> Resume
                 </a>
             </div>
@@ -90,7 +90,7 @@
         <a href="#certifications">Certifications</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
             target="_blank" rel="noopener noreferrer"><i class="fas fa-paper-plane"></i> Contact Form</a>
-        <a href="https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-primary" download target="_blank" rel="noopener noreferrer">
+        <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-primary" download>
             <i class="fas fa-download"></i> Download Resume PDF
         </a>
     </div>
@@ -146,7 +146,7 @@
                 <div class="portrait-card">
                     <div class="portrait-ring"></div>
                     <div class="portrait-wrapper">
-                        <img src="1769531770435~2.png" alt="Muhammad Ahmed Talha - Profile Photo" class="portrait-img">
+                        <img src="profile-photo.png" alt="Muhammad Ahmed Talha profile picture" class="portrait-img">
                         <div class="portrait-overlay"></div>
                     </div>
                     <div class="floating-badge badge-1">
@@ -232,7 +232,7 @@
             <div class="about-grid">
                 <div class="about-visual reveal">
                     <div class="about-img-frame">
-                        <img src="1787210657035.jpg" alt="Muhammad Ahmed Talha - Security Analyst & Instructor"
+                        <img src="banner-bg.jpg" alt="Muhammad Ahmed Talha speaking as a cybersecurity conference panelist"
                             class="about-img">
                         <div class="about-badge">
                             <i class="fas fa-microphone-alt"></i>
@@ -282,7 +282,7 @@
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing"
                             target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i
                                 class="fas fa-paper-plane"></i> Get in Touch</a>
-                        <a href="https://talha.dpdns.org/M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline" download target="_blank" rel="noopener noreferrer">
+                        <a href="M-Ahmed-Talha-Resume-2026.pdf" class="btn btn-outline" download>
                             <i class="fas fa-file-alt"></i> Resume Details
                         </a>
                     </div>
@@ -921,7 +921,7 @@
     <a href="#" class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></a>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="jarvis-aichatbot.js" defer></script>
 </body>
 
