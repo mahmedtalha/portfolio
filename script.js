@@ -1,3 +1,101 @@
+const portfolioData = window.portfolioData;
+
+function hydratePortfolioData() {
+    if (!portfolioData) {
+        console.error('Shared portfolio data failed to load.');
+        return;
+    }
+
+    document.querySelectorAll('[data-stat]').forEach(card => {
+        const stat = portfolioData.statistics[card.dataset.stat];
+        if (!stat) return;
+        const counter = card.querySelector('.counter');
+        const suffix = card.querySelector('.plus');
+        const label = card.querySelector('p');
+        const context = card.querySelector('.stat-sub');
+        if (counter) {
+            counter.dataset.target = String(stat.value);
+            counter.textContent = String(stat.value);
+        }
+        if (suffix) suffix.textContent = stat.suffix;
+        if (label) label.textContent = stat.label;
+        if (context) context.textContent = stat.context;
+    });
+
+    document.querySelectorAll('[data-skill-group]').forEach(container => {
+        const skills = portfolioData.skills[container.dataset.skillGroup];
+        if (!Array.isArray(skills)) return;
+        container.replaceChildren(...skills.map(skill => {
+            const tag = document.createElement('span');
+            tag.textContent = skill;
+            return tag;
+        }));
+    });
+
+    const projectsById = new Map(portfolioData.projects.map(project => [project.id, project]));
+    document.querySelectorAll('[data-project-id]').forEach(card => {
+        const project = projectsById.get(card.dataset.projectId);
+        if (!project) return;
+        const title = card.querySelector('h3');
+        const techStack = card.querySelector('.project-tech .tech-stack');
+        if (title) title.textContent = project.name;
+        if (techStack) {
+            techStack.replaceChildren(...project.technologies.map(technology => {
+                const tag = document.createElement('span');
+                tag.textContent = technology;
+                return tag;
+            }));
+        }
+        card.dataset.category = project.categories.join(' ');
+    });
+
+    const experienceById = new Map(portfolioData.experience.map(item => [item.id, item]));
+    document.querySelectorAll('[data-experience-id]').forEach(item => {
+        const experience = experienceById.get(item.dataset.experienceId);
+        if (!experience) return;
+        const title = item.querySelector('.timeline-header h3');
+        const organization = item.querySelector('.timeline-header h4');
+        const dates = item.querySelector('.timeline-date');
+        const bulletList = item.querySelector('.timeline-content > ul');
+        if (title) title.textContent = experience.role;
+        if (organization) organization.textContent = experience.organization;
+        if (dates) dates.textContent = experience.dates;
+        if (bulletList && Array.isArray(experience.bullets)) {
+            bulletList.replaceChildren(...experience.bullets.map(bullet => {
+                const listItem = document.createElement('li');
+                listItem.textContent = bullet;
+                return listItem;
+            }));
+        }
+    });
+
+    document.querySelectorAll('[data-experience-group]').forEach(group => {
+        const ids = group.dataset.experienceGroup.split(',');
+        group.querySelectorAll('.experience-role').forEach((role, index) => {
+            const experience = experienceById.get(ids[index]);
+            if (!experience) return;
+            const title = role.querySelector('h5');
+            const summary = role.querySelector('p');
+            if (title) title.textContent = `${experience.organization} — ${experience.role}`;
+            if (summary) summary.textContent = experience.summary;
+        });
+    });
+
+    const certificationsById = new Map(portfolioData.certifications.map(item => [item.id, item]));
+    document.querySelectorAll('[data-certification-id]').forEach(card => {
+        const certification = certificationsById.get(card.dataset.certificationId);
+        if (!certification) return;
+        const title = card.querySelector('h4');
+        const issuer = card.querySelector('.cert-issuer');
+        const detail = card.querySelector('.cert-detail');
+        if (title) title.textContent = certification.name;
+        if (issuer) issuer.textContent = certification.issuer;
+        if (detail) detail.textContent = certification.detail;
+    });
+}
+
+hydratePortfolioData();
+
 // Force page to start from top on refresh
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
@@ -147,7 +245,7 @@ revealElements.forEach(el => {
 // Accessible project filtering
 const projectFilters = document.querySelectorAll('.project-filter');
 const projectCards = document.querySelectorAll('.project-card[data-category]');
-const projectsTierHeading = document.querySelector('.projects-tier-heading');
+const projectsTierHeadings = document.querySelectorAll('.projects-tier-heading');
 
 projectFilters.forEach(button => {
     button.addEventListener('click', () => {
@@ -164,7 +262,9 @@ projectFilters.forEach(button => {
             card.hidden = selectedFilter !== 'all' && !categories.includes(selectedFilter);
         });
 
-        if (projectsTierHeading) projectsTierHeading.hidden = selectedFilter !== 'all';
+        projectsTierHeadings.forEach(heading => {
+            heading.hidden = selectedFilter !== 'all';
+        });
     });
 });
 
@@ -181,7 +281,7 @@ function runCounter(counter) {
         return;
     }
 
-    const duration = 550; // Short enough to feel responsive, long enough to read
+    const duration = 850; // 0.3 seconds longer for a more readable count-up
     const startTime = performance.now();
     const numberHeading = counter.closest('h3');
 

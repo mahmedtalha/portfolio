@@ -1,6 +1,9 @@
 (() => {
   'use strict';
 
+  const PORTFOLIO_KNOWLEDGE = window.portfolioData;
+  if (!PORTFOLIO_KNOWLEDGE) throw new Error('Shared portfolio data is unavailable.');
+
   const JARVIS_URLS = Object.freeze({
     about: '#about',
     skills: '#skills',
@@ -9,92 +12,10 @@
     speaking: '#speaking',
     certifications: '#certifications',
     contactSection: '#contact',
-    resume: 'M-Ahmed-Talha-Resume-2026.pdf',
-    github: 'https://github.com/mahmedtalha',
-    linkedin: 'https://linkedin.com/in/ahmedtalha470',
-    contact: 'https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing',
-    email: 'mailto:ahmedtalha470@gmail.com',
-    whatsapp: 'https://wa.me/923023070227'
+    ...PORTFOLIO_KNOWLEDGE.links
   });
 
   const action = (label, url, icon = 'fa-arrow-right') => ({ label, url, icon });
-
-  // Factual source used by the local provider and safe to send to a configured backend.
-  const PORTFOLIO_KNOWLEDGE = Object.freeze({
-    version: '2026-09-02',
-    profile: {
-      name: 'Muhammad Ahmed Talha',
-      location: 'Rahim Yar Khan, Pakistan',
-      education: 'BS Cyber Security, Islamia University of Bahawalpur (RYK), CGPA 3.5 / 4.0',
-      experience: '4+ years',
-      professionalIdentity: 'Cybersecurity and IT Infrastructure Professional',
-      mostRecentRole: 'IT Assistant Manager at Toyota Royal Motors (Mar 2025–Aug 2026)',
-      focus: ['Cybersecurity', 'Penetration Testing', 'Red Team Operations', 'Vulnerability Assessment',
-        'IT Infrastructure', 'Network Security', 'Systems Administration', 'Security Automation']
-    },
-    statistics: {
-      experience: '4+ years', students: '3,000+', workstations: '250+', tools: '10+'
-    },
-    skills: {
-      cybersecurity: ['Penetration Testing', 'Red Teaming', 'Vulnerability Assessment', 'VAPT',
-        'Digital Forensics', 'Incident Response', 'Malware Analysis', 'OWASP Top 10',
-        'Web Application Penetration Testing', 'OSINT', 'Security Auditing'],
-      securityTools: ['Metasploit', 'Nmap', 'Nessus', 'OpenVAS', 'Wireshark', 'Recon-ng',
-        'Aircrack-ng', 'Hashcat', 'Splunk', 'Microsoft Sentinel', 'CrowdStrike Falcon', 'Wazuh', 'Ghidra'],
-      infrastructure: ['TCP/IP', 'Subnetting', 'VLANs', 'VPNs', 'DHCP', 'DNS', 'Fortinet Firewall',
-        'pfSense', 'MikroTik', 'Active Directory', 'Group Policy', 'Windows Server',
-        'Linux Administration', 'IP CCTV', 'NVR'],
-      development: ['Python', 'Scapy', 'PyQt', 'PowerShell', 'Bash', 'Exploit Writing', 'AWS',
-        'Microsoft Azure', 'Google Cloud', 'VMware', 'Hyper-V', 'Git', 'GitHub', 'Acronis Backup']
-    },
-    projects: [
-      {
-        name: 'Information Gathering Framework', aliases: ['information gathering', 'info gathering'],
-        description: 'A Python security assessment tool for domain enumeration, IP lookup, port scanning, and OSINT reconnaissance.',
-        repo: 'https://github.com/mahmedtalha/info-gathering'
-      },
-      {
-        name: 'User Finder Zeta', aliases: ['user finder', 'username finder'],
-        description: 'A multithreaded Python OSINT tool that traces usernames and email accounts across online platforms using API scraping.',
-        repo: 'https://github.com/mahmedtalha/user-finder'
-      },
-      {
-        name: 'Zeta Metadata & OSINT Extractor', aliases: ['metadata', 'metadata extractor'],
-        description: 'A digital forensics tool that extracts hidden metadata from PDF, DOCX, and image files for OSINT, risk assessment, and intelligence gathering.',
-        repo: 'https://github.com/mahmedtalha/meta-data-extractor-zeta'
-      },
-      {
-        name: 'AI Video & Image Watermark Remover Pro', aliases: ['watermark', 'watermark remover', 'florence'],
-        description: 'A PyQt desktop application using Florence-2 and LaMA models for object detection, segmentation, and watermark removal.',
-        repo: 'https://github.com/mahmedtalha/AI-Video-Watermark-Remover-Pro'
-      },
-      {
-        name: 'Wi-Fi Deauth Detector NodeMCU', aliases: ['deauth', 'wifi detector', 'wi-fi detector', 'nodemcu'],
-        description: 'An ESP8266/C++ hardware defense tool that monitors Wi-Fi traffic for 802.11 deauthentication attacks and alerts administrators.',
-        repo: 'https://github.com/mahmedtalha/WiFiDeauthDetectorNodeMCU'
-      },
-      {
-        name: 'Live Website Detector', aliases: ['website detector', 'ssl checker'],
-        description: 'An HTTP/HTTPS validation tool for host availability, SSL certificate validity, and HTTP response codes.',
-        repo: 'https://github.com/mahmedtalha/live-website-detector'
-      },
-      {
-        name: 'Live Proxy Detector', aliases: ['proxy detector', 'proxy checker'],
-        description: 'A multithreaded proxy verification tool that checks availability, connection latency, and active proxy servers.',
-        repo: 'https://github.com/mahmedtalha/live-proxy-detector'
-      },
-      {
-        name: 'Slowloris Advanced DoS Simulator', aliases: ['slowloris', 'dos simulator'],
-        description: 'An authorized security-testing tool for evaluating web-server connection resilience and socket handling.',
-        repo: 'https://github.com/mahmedtalha/slowlorisAdvancedVersion'
-      },
-      {
-        name: 'Prodigy Cyber Security Research Suite', aliases: ['prodigy', 'packet sniffer', 'keystroke telemetry', 'image encryption'],
-        description: 'An authorized lab-research collection containing a raw packet analyzer, endpoint keystroke telemetry prototype, and RGB pixel-manipulation image cryptography project.',
-        repo: 'https://github.com/mahmedtalha'
-      }
-    ]
-  });
 
   const normalize = (value) => value.toLowerCase()
     .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
@@ -106,6 +27,8 @@
     return new RegExp(`(?:^|[^a-z0-9])${escaped}(?=$|[^a-z0-9])`).test(text);
   };
   const response = (answer, actions = []) => ({ answer, actions });
+  const formatList = (items) => items.join(', ').replace(/, ([^,]*)$/, ', and $1');
+  const primaryRepository = (project) => project.repositories?.[0]?.url || JARVIS_URLS.github;
 
   class LocalPortfolioProvider {
     constructor(knowledge) {
@@ -115,6 +38,8 @@
     async respond(question) {
       const q = normalize(question);
       const projects = this.knowledge.projects;
+      const experience = new Map(this.knowledge.experience.map((item) => [item.id, item]));
+      const stats = this.knowledge.statistics;
 
       if (!q) return response('Please enter a question about Muhammad Ahmed Talha’s portfolio.');
 
@@ -128,80 +53,94 @@
       const project = projects.find((item) => item.aliases.some((alias) => q.includes(normalize(alias))));
       if (project && includesAny(q, ['project', 'tool', 'built', 'repository', 'repo', ...project.aliases])) {
         return response(`${project.name}: ${project.description}`, [
-          action('Open Repository', project.repo, 'fa-brands fa-github'),
+          action('Open Repository', primaryRepository(project), 'fa-brands fa-github'),
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch')
         ]);
       }
 
       if (includesAny(q, ['current work', 'currently work', 'current role', 'current job', 'where does he work',
         'where is he working', 'employer now', 'toyota royal', 'toyota'])) {
-        return response('Muhammad most recently served as IT Assistant Manager at Toyota Royal Motors in Rahim Yar Khan from Mar 2025 to Aug 2026. His responsibilities included IT infrastructure, wired and wireless networks, Windows/SQL servers, NAS, routers, backups, Google Workspace, biometric attendance, CCTV/NVR, and end-user support. He managed 50+ network devices and 70+ workstations.', [
+        const role = experience.get('toyota');
+        return response(`${role.role} — ${role.organization} (${role.dates}). ${role.summary}`, [
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase')
         ]);
       }
 
       if (includesAny(q, ['sugar mill', 'chaudhry sugar', 'csml'])) {
-        return response('At Chaudhry Sugar Mills Ltd, Muhammad worked as an IT Assistant from Sep 2024–Mar 2025. He supported network and system administration, three weighbridges, 70+ workstations, Active Directory, Group Policy, printers and scanners, and pfSense, MikroTik, Fortinet, and NETGATE firewalls. The portfolio reports that he resolved 50% of IT tickets within 24 hours and improved uptime by 10%.', [
+        const role = experience.get('csml');
+        return response(`${role.role} — ${role.organization} (${role.dates}). ${role.summary}`, [
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase')
         ]);
       }
 
       if (includesAny(q, ['itsolera', 'team zeta', 'internship'])) {
-        return response('At ITSOLERA PVT LTD (Jun–Sep 2024), Muhammad was a Cybersecurity Internship Trainee. He performed web application penetration testing, vulnerability assessment, Red Team work, risk documentation, remediation planning, and built Python/Bash tools for OSINT, metadata extraction, and automated reconnaissance. He also led Team Zeta.', [
+        const role = experience.get('itsolera');
+        return response(`${role.role} — ${role.organization} (${role.dates}). ${role.summary}`, [
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase'),
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch')
         ]);
       }
 
       if (includesAny(q, ['udemy', 'teaching', 'teacher', 'instructor', 'trained', 'students', 'mentored', 'training'])) {
-        return response('Muhammad taught cybersecurity through Udemy and NAVTTC/IUB-RYK. He created 30+ hands-on CEH v11 lab modules for 3,000+ Udemy students (May 2021–May 2024) and mentored 50+ students as a Cybersecurity Teaching Assistant in Mar 2022. Topics included SQL injection, wireless security, reconnaissance, network sniffing, DoS mitigation, VAPT, scanning, and malware analysis.', [
+        const udemy = experience.get('udemy');
+        const navttc = experience.get('navttc');
+        return response(`${udemy.role} — ${udemy.organization} (${udemy.dates}): ${udemy.summary} ${navttc.role} — ${navttc.organization} (${navttc.dates}): ${navttc.summary}`, [
           action('View Experience', JARVIS_URLS.experience, 'fa-chalkboard-teacher')
         ]);
       }
 
       if (includesAny(q, ['prodigy infotech', 'codealpha', 'devcastle', 'python developer'])) {
-        return response('In 2024, Muhammad worked as a Python Developer & IT Administrator with Prodigy InfoTech / CodeAlpha and DevCastle Builtinsoft. His work included image encryption, packet sniffing, keystroke telemetry utilities, computer-lab operations, network configuration, and office administration.', [
+        const roles = ['prodigy', 'codealpha', 'devcastle'].map((id) => experience.get(id));
+        return response(`Additional technical experience in 2024:\n${roles.map((role) => `• ${role.organization} — ${role.role}: ${role.summary}`).join('\n')}`, [
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase'),
           action('GitHub', JARVIS_URLS.github, 'fa-brands fa-github')
         ]);
       }
 
       if (includesAny(q, ['osint project', 'osint projects', 'reconnaissance project', 'reconnaissance tools'])) {
-        return response('Muhammad’s OSINT-focused projects include User Finder Zeta, the Information Gathering Framework, and the Zeta Metadata & OSINT Extractor. Together they cover account discovery, domain/IP reconnaissance, port scanning, and document/image metadata extraction.', [
+        const osintProjects = projects.filter((item) => item.categories.includes('osint'));
+        return response(`Muhammad’s OSINT-focused projects are ${formatList(osintProjects.map((item) => item.name))}. Together they cover public-footprint checks, domain/IP reconnaissance, port scanning, and document/image metadata extraction.`, [
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch'),
           action('GitHub', JARVIS_URLS.github, 'fa-brands fa-github')
         ]);
       }
 
       if (includesAny(q, ['project', 'projects', 'portfolio work', 'what has he built', 'what did he build', 'repositories'])) {
-        return response('Muhammad’s featured work includes:\n• Information Gathering Framework\n• User Finder Zeta\n• Zeta Metadata & OSINT Extractor\n• Wi-Fi Deauth Detector NodeMCU\n\nAdditional projects include the AI media-processing application, Live Website and Proxy Detectors, and controlled-lab security research tools.', [
+        const featured = projects.filter((item) => item.featured).map((item) => `• ${item.name}`).join('\n');
+        const additional = projects.filter((item) => !item.featured).map((item) => `• ${item.name}`).join('\n');
+        return response(`Featured work:\n${featured}\n\nAdditional projects:\n${additional}`, [
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch'),
           action('GitHub', JARVIS_URLS.github, 'fa-brands fa-github')
         ]);
       }
 
       if (includesAny(q, ['osint', 'open source intelligence', 'reconnaissance'])) {
-        return response('OSINT is a recurring part of Muhammad’s security work. His portfolio includes User Finder Zeta, the Information Gathering Framework, and the Zeta Metadata & OSINT Extractor. At ITSOLERA, he also worked on automated reconnaissance and metadata extraction.', [
+        const osintProjects = projects.filter((item) => item.categories.includes('osint'));
+        return response(`OSINT is a recurring part of Muhammad’s security work. Relevant projects include ${formatList(osintProjects.map((item) => item.name))}. At ITSOLERA, he also worked on automated reconnaissance and metadata extraction.`, [
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch'),
           action('GitHub', JARVIS_URLS.github, 'fa-brands fa-github')
         ]);
       }
 
       if (includesAny(q, ['certification', 'certifications', 'certificate', 'certified', 'isc2', 'isc 2', 'cybrary'])) {
-        return response('Education, certificates, and training listed in Muhammad’s portfolio include:\n• BS Cyber Security — The Islamia University of Bahawalpur\n• Certificate in Cyber Security — NAVTTC Govt. Pakistan\n• Offensive Penetration Testing training — Cybrary\n• Certified in Cybersecurity (CC) training — (ISC)²\n• Ethical Hacking Essentials course — Code Red | EC-Council\n• Mobile App Security training — Cybrary\n• CRISC exam-preparation training — Cybrary\n• Microsoft Word training — Eduonix', [
+        const credentials = this.knowledge.certifications.map((item) => `• ${item.name} — ${item.issuer}`).join('\n');
+        return response(`Education, certificates, and training listed in the portfolio include:\n${credentials}`, [
           action('View Certifications', JARVIS_URLS.certifications, 'fa-certificate')
         ]);
       }
 
       if (includesAny(q, ['education', 'degree', 'university', 'cgpa', 'studied', 'graduate', 'bachelor'])) {
-        return response('Muhammad earned a BS in Cyber Security from the Islamia University of Bahawalpur (2020–2024), with a CGPA of 3.5 / 4.0. He also completed a Certificate in Cyber Security through NAVTTC Govt. Pakistan from Mar–Dec 2022.', [
+        const education = this.knowledge.profile.education;
+        const navttcCertificate = this.knowledge.certifications.find((item) => item.id === 'navttc-cert');
+        return response(`Muhammad earned a ${education.degree} from ${education.institution} (${education.dates}), with a CGPA of ${education.cgpa}. He also completed ${navttcCertificate.name} through ${navttcCertificate.issuer} (${navttcCertificate.detail}).`, [
           action('About Muhammad', JARVIS_URLS.about, 'fa-user'),
           action('Certifications', JARVIS_URLS.certifications, 'fa-certificate')
         ]);
       }
 
       if (includesAny(q, ['speaker', 'speaking', 'panelist', 'conference', 'bzu', 'panel'])) {
-        return response('Muhammad was a Cyber Security Panelist & Speaker at the BZU Multan CIT Conference in Aug 2026. He discussed AI-enhanced cyber threats, quantum-computing risks, password and hash cracking, human-firewall strategies, and digital defense.', [
+        const speaking = this.knowledge.speaking;
+        return response(`Muhammad was a ${speaking.role} at the ${speaking.event} in ${speaking.date}. Topics included ${formatList(speaking.topics)}.`, [
           action('View Speaking', JARVIS_URLS.speaking, 'fa-comments')
         ]);
       }
@@ -216,8 +155,8 @@
         'career opportunity', 'career opportunities', 'job opportunity', 'available for work', 'open to work', 'open to jobs'])) {
         const availability = includesAny(q, ['available for work', 'open to work', 'open to jobs', 'job opportunity']);
         const lead = availability
-          ? 'Yes. Muhammad’s portfolio states that he is open to full-time Cybersecurity, Red Team, VAPT, or IT Infrastructure opportunities. You can reach him through the contact form, email, WhatsApp, or LinkedIn.'
-          : 'You can contact Muhammad in Rahim Yar Khan, Pakistan by email at ahmedtalha470@gmail.com, WhatsApp at +92 302 307 0227, LinkedIn, or the contact form.';
+          ? `Yes. Muhammad’s portfolio states that he is open to full-time ${formatList(this.knowledge.profile.openTo)} opportunities. You can reach him through the contact form, email, WhatsApp, or LinkedIn.`
+          : `You can contact Muhammad in ${this.knowledge.profile.location} by email at ${this.knowledge.links.email.replace('mailto:', '')}, WhatsApp at ${this.knowledge.links.phoneDisplay}, LinkedIn, or the contact form.`;
         return response(lead, [
           action('Contact Muhammad', JARVIS_URLS.contact, 'fa-paper-plane'),
           action('Email', JARVIS_URLS.email, 'fa-envelope'),
@@ -240,7 +179,7 @@
       }
 
       if (includesAny(q, ['how many', 'statistics', 'stats', 'numbers', 'years experience', 'workstations managed', 'custom tools'])) {
-        return response('Portfolio highlights:\n• 4+ years of experience\n• 3,000+ students trained\n• 250+ workstations managed\n• 10+ custom security tools', [
+        return response(`Portfolio highlights:\n• ${stats.experience.display} across training, projects, penetration testing, and enterprise IT operations\n• ${stats.students.display} students trained\n• ${stats.workstations.display} workstations managed across ${stats.workstations.context}\n• ${stats.tools.display} custom security tools`, [
           action('About Muhammad', JARVIS_URLS.about, 'fa-user')
         ]);
       }
@@ -268,34 +207,36 @@
       }
 
       if (includesAny(q, ['network', 'networking', 'infrastructure', 'system administration', 'sysadmin', 'firewall'])) {
-        return response('Muhammad’s networking and infrastructure background includes TCP/IP, subnetting, VLANs, VPNs, DHCP, DNS, Windows Server, Linux administration, Active Directory, Group Policy, Fortinet, pfSense, MikroTik, NAS, IP CCTV/NVR, VMware, Hyper-V, and Acronis backup. His Toyota and CSML roles included managing production networks and end-user systems.', [
+        return response(`Muhammad’s listed networking and infrastructure skills include ${formatList(this.knowledge.skills.infrastructure)}. His Toyota and CSML roles included managing production networks and end-user systems.`, [
           action('View Skills', JARVIS_URLS.skills, 'fa-network-wired'),
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase')
         ]);
       }
 
       if (includesAny(q, ['python', 'scripting', 'automation', 'programming', 'developer'])) {
-        return response('Yes. Muhammad uses Python for security automation and tools, including OSINT, reconnaissance, metadata extraction, packet analysis with Scapy, and PyQt desktop applications. Bash and PowerShell are also listed in his scripting toolkit.', [
+        return response(`Muhammad’s listed scripting and technology exposure includes ${formatList(this.knowledge.skills.development)}. His projects apply these technologies to OSINT, reconnaissance, metadata extraction, packet analysis, and desktop applications.`, [
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch'),
           action('View Skills', JARVIS_URLS.skills, 'fa-code')
         ]);
       }
 
       if (includesAny(q, ['skills', 'specialize', 'specialise', 'expertise', 'technologies', 'tech stack', 'tools does he know'])) {
-        return response('Muhammad specializes in cybersecurity and IT infrastructure: penetration testing, Red Team operations, VAPT, OSINT, digital forensics, incident response, network security, systems administration, and security automation. His toolkit spans Metasploit, Nmap, Nessus, Wireshark, SIEM/EDR platforms, firewalls, Windows/Linux administration, Python, Bash, PowerShell, and major cloud/virtualization platforms.', [
+        const skills = this.knowledge.skills;
+        return response(`Cybersecurity: ${formatList(skills.cybersecurity)}.\n\nSecurity tools: ${formatList(skills.securityTools)}.\n\nNetworking and infrastructure: ${formatList(skills.infrastructure)}.\n\nScripting and technology exposure: ${formatList(skills.development)}.`, [
           action('View Skills', JARVIS_URLS.skills, 'fa-shield-halved')
         ]);
       }
 
       if (includesAny(q, ['experience', 'career', 'background', 'work history', 'professional history'])) {
-        return response('Muhammad has 4+ years across cybersecurity, IT operations, infrastructure, development, and teaching. His portfolio lists Toyota Royal Motors, Chaudhry Sugar Mills Ltd, ITSOLERA, Prodigy InfoTech / CodeAlpha and DevCastle Builtinsoft, NAVTTC/IUB-RYK, and Udemy.', [
+        return response(`Muhammad has ${stats.experience.display} across cybersecurity, IT operations, infrastructure, development, and teaching. His experience includes ${formatList(this.knowledge.experience.map((item) => item.organization))}.`, [
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase'),
           action('Download Resume', JARVIS_URLS.resume, 'fa-file-arrow-down')
         ]);
       }
 
       if (includesAny(q, ['who is', 'about muhammad', 'about talha', 'tell me about him', 'profile', 'location', 'where is he from'])) {
-        return response('Muhammad Ahmed Talha is a cybersecurity and IT infrastructure professional based in Rahim Yar Khan, Pakistan. He holds a BS in Cyber Security with a 3.5 / 4.0 CGPA and has 4+ years of experience spanning penetration testing, Red Team operations, vulnerability assessment, networks, systems administration, and security automation.', [
+        const profile = this.knowledge.profile;
+        return response(`${profile.name} is a ${profile.professionalIdentity.toLowerCase()} based in ${profile.location}. He holds a ${profile.education.degree} with a ${profile.education.cgpa} CGPA and has ${profile.experience} experience across security training, hands-on projects, penetration testing, and enterprise IT operations.`, [
           action('About Muhammad', JARVIS_URLS.about, 'fa-user'),
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase')
         ]);
@@ -403,6 +344,10 @@
       document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && this.isOpen()) this.close();
       });
+      document.addEventListener('click', (event) => {
+        if (!this.isOpen() || el.window.classList.contains('jarvis-minimized')) return;
+        if (!this.root.contains(event.target)) this.toggleMinimize(true);
+      }, true);
     }
 
     isOpen() {

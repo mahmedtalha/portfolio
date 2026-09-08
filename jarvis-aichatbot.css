@@ -733,6 +733,53 @@
   }
 }
 
+/* Larger desktop assistant; mobile keeps the original compact sizing below. */
+@media (min-width: 769px) {
+  #jarvis-launcher .jarvis-btn-core {
+    width: 57px;
+    height: 57px;
+  }
+
+  #jarvis-launcher .jarvis-btn-core svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #jarvis-launcher .jarvis-ring {
+    width: 72px;
+    height: 72px;
+  }
+
+  #jarvis-launcher .jarvis-ring-2 {
+    width: 84px;
+    height: 84px;
+  }
+
+  #jarvis-launcher .jarvis-pulse {
+    top: 4px;
+    right: 4px;
+    width: 9px;
+    height: 9px;
+  }
+
+  #jarvis-launcher .jarvis-label {
+    right: calc(100% + 7px);
+    font-size: 10px;
+    letter-spacing: 0.9px;
+    padding: 4px 9px;
+  }
+
+  #jarvis-chat-window {
+    bottom: calc(94px + var(--jarvis-viewport-bottom, 0px));
+    width: min(495px, calc(var(--jarvis-viewport-width, 100vw) - 76px));
+    height: min(600px, calc(var(--jarvis-viewport-height, 100vh) - 150px));
+  }
+
+  .back-to-top {
+    bottom: calc(112px + var(--jarvis-viewport-bottom, 0px));
+  }
+}
+
 /* ── Mobile ── */
 @media (max-width: 480px) {
   #jarvis-launcher {

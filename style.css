@@ -1258,6 +1258,7 @@ img {
 }
 
 .project-card--featured {
+    padding: 2.25rem;
     border-color: var(--border-glow);
     background: linear-gradient(145deg, var(--surface-color), var(--glass-bg));
     box-shadow: inset 0 3px 0 rgba(0, 230, 118, 0.45);
@@ -1265,11 +1266,90 @@ img {
 
 .project-card--featured::before {
     content: "FEATURED PROJECT";
+    display: block;
     width: fit-content;
     margin-bottom: 1rem;
     color: var(--primary-color);
     font: 600 0.68rem var(--font-mono);
     letter-spacing: 0.12em;
+}
+
+.project-case-study {
+    display: grid;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.project-case-study div {
+    display: grid;
+    grid-template-columns: 7.4rem 1fr;
+    gap: 0.8rem;
+    padding: 0.72rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-case-study div:last-child {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-case-study dt {
+    color: var(--primary-color);
+    font: 600 0.72rem/1.5 var(--font-mono);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.project-case-study dd {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.project-case-study--outcome {
+    margin-top: 0;
+}
+
+.project-tech {
+    min-width: 0;
+}
+
+.project-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-footer .project-tech {
+    flex: 1;
+}
+
+.project-footer .project-github-btn,
+.project-footer .project-actions,
+.project-footer .grouped-repo-buttons {
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+.project-footer--stacked {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.project-footer--stacked .grouped-repo-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-detail-label {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--primary-color);
+    font: 600 0.72rem var(--font-mono);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .project-card:hover {
@@ -1324,6 +1404,21 @@ img {
     flex-grow: 1;
 }
 
+.project-card--compact {
+    align-self: stretch;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.project-actions .project-github-btn {
+    flex: 1;
+    margin-top: 0;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -1357,7 +1452,7 @@ img {
 /* Experience Section */
 .timeline {
     position: relative;
-    max-width: 850px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -1395,7 +1490,7 @@ img {
 
 .timeline-content {
     background: var(--surface-color);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
     transition: all var(--transition-normal);
@@ -1449,6 +1544,27 @@ img {
 
 .timeline-content ul li strong {
     color: var(--text-primary);
+}
+
+.experience-role {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.experience-role:first-of-type {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.experience-role h5 {
+    margin-bottom: 0.35rem;
+    color: var(--text-primary);
+    font-size: 0.98rem;
+}
+
+.experience-role p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
 }
 
 /* Certifications */
@@ -1862,6 +1978,19 @@ body {
 }
 
 /* Responsive Styles */
+@media screen and (min-width: 993px) {
+    .container,
+    .nav-container {
+        max-width: none;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .hero-title {
         font-size: 3.2rem;
@@ -1899,6 +2028,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .project-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .project-footer .project-github-btn {
+        width: fit-content;
+    }
+
     .nav-links {
         display: none;
     }
@@ -2112,6 +2250,15 @@ body {
     .contact-form,
     .info-card {
         padding: 1.35rem 1rem;
+    }
+
+    .project-card--featured {
+        padding: 1.35rem 1rem;
+    }
+
+    .project-case-study div {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
     }
 
     .info-card p,
