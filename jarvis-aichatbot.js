@@ -7,6 +7,7 @@
   const JARVIS_URLS = Object.freeze({
     about: '#about',
     skills: '#skills',
+    hackstarkSection: '#hackstark',
     projects: '#projects',
     experience: '#experience',
     speaking: '#speaking',
@@ -47,6 +48,14 @@
         return response('Hello. I’m JARVIS, Muhammad Ahmed Talha’s AI portfolio assistant. What would you like to explore?', [
           action('About Muhammad', JARVIS_URLS.about, 'fa-user'),
           action('View Projects', JARVIS_URLS.projects, 'fa-code-branch')
+        ]);
+      }
+
+      if (includesAny(q, ['hackstark', 'founder', 'cybersecurity education organization', 'open source organization'])) {
+        return response('Muhammad Ahmed Talha is the Founder & CEO of HackStark, an independent cybersecurity education and open-source organization focused on practical learning, responsible security research, ethical hacking, labs, and security tooling.', [
+          action('Muhammad’s HackStark Role', JARVIS_URLS.hackstarkSection, 'fa-people-group'),
+          action('Visit HackStark', JARVIS_URLS.hackstark, 'fa-arrow-up-right-from-square'),
+          action('Explore Course', JARVIS_URLS.hackstarkCourse, 'fa-book-open')
         ]);
       }
 
@@ -179,7 +188,7 @@
       }
 
       if (includesAny(q, ['how many', 'statistics', 'stats', 'numbers', 'years experience', 'workstations managed', 'custom tools'])) {
-        return response(`Portfolio highlights:\n• ${stats.experience.display} across training, projects, penetration testing, and enterprise IT operations\n• ${stats.students.display} students trained\n• ${stats.workstations.display} workstations managed across ${stats.workstations.context}\n• ${stats.tools.display} custom security tools`, [
+        return response(`Portfolio highlights:\n• ${stats.experience.display} across training, projects, penetration testing, and enterprise IT operations\n• ${stats.students.display} students trained\n• ${stats.workstations.display} workstations managed across ${stats.workstations.context}\n• ${stats.tools.display} projects and custom security tools`, [
           action('About Muhammad', JARVIS_URLS.about, 'fa-user')
         ]);
       }
@@ -236,7 +245,7 @@
 
       if (includesAny(q, ['who is', 'about muhammad', 'about talha', 'tell me about him', 'profile', 'location', 'where is he from'])) {
         const profile = this.knowledge.profile;
-        return response(`${profile.name} is a ${profile.professionalIdentity.toLowerCase()} based in ${profile.location}. He holds a ${profile.education.degree} with a ${profile.education.cgpa} CGPA and has ${profile.experience} experience across security training, hands-on projects, penetration testing, and enterprise IT operations.`, [
+        return response(`${profile.name} is a ${profile.professionalIdentity.toLowerCase()} based in ${profile.location} and ${profile.leadershipIdentity}. He holds a ${profile.education.degree} with a ${profile.education.cgpa} CGPA and has ${profile.experience} experience across security training, hands-on projects, penetration testing, and enterprise IT operations.`, [
           action('About Muhammad', JARVIS_URLS.about, 'fa-user'),
           action('View Experience', JARVIS_URLS.experience, 'fa-briefcase')
         ]);

@@ -8,11 +8,12 @@
   };
 
   window.portfolioData = deepFreeze({
-    version: '2026-09-08',
+    version: '2026-09-14',
     profile: {
       name: 'Muhammad Ahmed Talha',
       location: 'Rahim Yar Khan, Pakistan',
       professionalIdentity: 'Cybersecurity and IT Infrastructure Professional',
+      leadershipIdentity: 'Founder & CEO of HackStark',
       experience: '4+ years combined',
       mostRecentRole: 'IT Assistant Manager at Toyota Royal Motors (Mar 2025–Aug 2026)',
       education: {
@@ -32,13 +33,15 @@
       contact: 'https://docs.google.com/forms/d/e/1FAIpQLScdbT_vnWj5tRU2b-XP_PdamjncAMHc3sgl6rGEUI8EHMe4QQ/viewform?usp=sharing',
       email: 'mailto:ahmedtalha470@gmail.com',
       whatsapp: 'https://wa.me/923023070227',
-      phoneDisplay: '+92 302 307 0227'
+      phoneDisplay: '+92 302 307 0227',
+      hackstark: 'https://mahmedtalha.github.io/hackstark/',
+      hackstarkCourse: 'https://mahmedtalha.github.io/hackstark/#about-course'
     },
     statistics: {
       experience: { value: 4, suffix: '+', display: '4+ years combined', label: 'Years Combined Experience', context: 'Training, Projects & IT Operations' },
-      students: { value: 3000, suffix: '+', display: '3,000+', label: 'Students Trained', context: 'Udemy & Labs' },
+      students: { value: 3000, suffix: '+', display: '3,000+', label: 'Students Trained', context: 'Udemy • Labs • Cybersecurity Education' },
       workstations: { value: 350, suffix: '+', display: '350+', label: 'Workstations Managed', context: 'TRM, CSML & DevCastle BuiltinSoft' },
-      tools: { value: 10, suffix: '+', display: '10+', label: 'Custom Security Tools', context: 'Python OSINT & VAPT Tools' }
+      tools: { value: 15, suffix: '+', display: '15+', label: 'Projects & Custom Security Tools', context: 'Python OSINT & VAPT Tools' }
     },
     skills: {
       cybersecurity: ['Penetration Testing', 'Red Teaming', 'Vulnerability Assessment (VAPT)',
@@ -53,6 +56,16 @@
         'Wazuh', 'Ghidra', 'Git & GitHub', 'Acronis Backup']
     },
     experience: [
+      {
+        id: 'hackstark', organization: 'HackStark', role: 'Founder & CEO', dates: '',
+        summary: 'Founded HackStark and leads its independent cybersecurity education and open-source initiatives focused on practical, responsible security learning.',
+        bullets: [
+          'Lead HackStark’s cybersecurity education and open-source initiatives, coordinating technical content, research, project development, and responsible-security learning resources.',
+          'Develop practical training across ethical hacking, network security, OSINT, Linux, IoT security, vulnerability assessment, and defensive practices.',
+          'Build and maintain educational resources, hands-on labs, open-source projects, and security tooling.',
+          'Developed a structured beginner ethical-hacking course with 46 lessons covering 25+ tools and platforms.'
+        ]
+      },
       {
         id: 'toyota', organization: 'Toyota Royal Motors | Rahim Yar Khan', role: 'IT Assistant Manager', dates: 'Mar 2025 – Aug 2026',
         summary: 'Managed enterprise IT infrastructure, support, cloud administration, surveillance, business systems, training, and digital communications.',
